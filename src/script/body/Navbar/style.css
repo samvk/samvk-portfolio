@@ -1,11 +1,28 @@
 .navbar {
     padding: * 15px;
-    border-bottom: 0.25em solid var(--purple);
     margin-bottom: 2.5em;
 }
 
 .navlink {
+    position: relative;
     text-transform: uppercase;
     font-weight: var(--bold);
     margin: * 0.75em;
+}
+
+.navlink a {
+    padding-bottom: 0.5em;
+
+    &:global(.active-link)::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: 4em;
+
+        border-left: 0.1em solid transparent;
+        border-right: 0.1em solid transparent;
+        border-top: 0.3em solid var(--purple);
+    }
 }
