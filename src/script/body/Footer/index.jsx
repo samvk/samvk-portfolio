@@ -25,8 +25,8 @@ export default class Footer extends React.Component {
                 {...props}
             >
                 <div className='text-center'>
-                    <p>Powered by <span title='React'>[REACT ICON]</span></p>
-                    <p>Hosted on my <span title='Raspberry Pi'>[RASBERRY][PIE][Or Just One Icon?]</span></p>
+                    <p>Powered by <span title='React'><img src='src/img/react.png' alt='' /></span></p>
+                    <p>Hosted on my <span title='Raspberry Pi'><img src='src/img/raspberry.png' alt='' /><img src='src/img/pie.png' alt='' /></span></p>
                 </div>
             </footer>
         );
