@@ -1,3 +1,9 @@
 .footer {
     border-bottom: 0.33em solid var(--purple);
 }
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
