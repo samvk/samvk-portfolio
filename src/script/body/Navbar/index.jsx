@@ -57,8 +57,8 @@ export default class Header extends React.Component {
                             </li>
                             <li styleName='navlink'>
                                 <Link
-                                    to='https://github.com/emmasimon'
                                     external
+                                    to='https://github.com/emmasimon'
                                 >
                                 GitHub
                             </Link>
