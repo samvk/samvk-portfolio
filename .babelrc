@@ -1,0 +1,19 @@
+{
+    "presets": [
+        [
+            "env",
+            {
+                "targets": {
+                    "browsers": [
+                        "last 2 versions",
+                        "ie >= 11"
+                    ]
+                }
+            }
+        ],
+        "react",
+        "react-hmre",
+        "stage-0"
+    ],
+    "plugins": ["transform-decorators-legacy"]
+}

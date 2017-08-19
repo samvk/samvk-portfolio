@@ -1,0 +1,27 @@
+// ==================================================================
+// CONTAINER
+// ==================================================================//
+
+// container
+.container {
+    position: relative;
+    margin: * auto;
+    padding: * 15px;
+    max-width: 100%;
+
+    // use .fluid on pages for full-width
+    &:not(.fluid) {
+        @media (--sm-min) {
+            width: 540px;
+        }
+        @media (--md-min) {
+            width: 720px;
+        }
+        @media (--lg-min) {
+            width: 960px;
+        }
+        @media (--xl-min) {
+            width: 1140px;
+        }
+    }
+}

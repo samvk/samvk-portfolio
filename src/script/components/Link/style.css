@@ -1,0 +1,16 @@
+.link {
+    @include hover(var(--gray-darkest));
+    @include active(var(--gray-darker));
+}
+
+.external-link::after {
+    font-awesome: external-link;
+    font-size: 0.75em;
+    vertical-align: text-top;
+    padding-left: 0.25em;
+}
+
+.text,
+:global(.active-link) {
+    color: var(--purple);
+}

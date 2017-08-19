@@ -1,0 +1,32 @@
+// ==================================================================
+// FONT-FAMILY
+// ==================================================================//
+
+body {
+    font-family: var(--ff-secondary); // fallback
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: var(--ff-primary);
+    font-weight: var(--bolder);
+}
+
+nav {
+    font-family: var(--ff-primary);
+}
+
+p,
+blockquote,
+li {
+    font-family: var(--ff-secondary);
+}
+
+.button {
+    font-family: var(--ff-secondary);
+}
+
+input,
+textarea,
+select {
+    font-family: var(--ff-secondary);
+}

@@ -1,0 +1,85 @@
+// ==================================================================
+// FONT VARIABLES
+// ==================================================================//
+
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+
+:root {
+    // Base Font Size
+    --fs-base: 16px;
+
+    // Font Family
+    --ff-primary: 'Playfair Display', system-ui;
+    --ff-secondary: 'Lato', system-ui;
+    --ff-accent: system-ui;
+    --ff-loud: system-ui;
+    --ff-logo: system-ui;
+
+    // Font Weights
+    --lighter: 100;
+    --light: 300;
+    --normal: 400;
+    --medium-bold: 500;
+    --semi-bold: 600;
+    --bold: 700;
+    --bolder: 900;
+
+    // Line Heights
+    --lh-none: 1;
+    --lh-half: 1.2;
+    --lh-base: 1.4;
+    --lh-2: 1.7;
+    --lh-3: 2;
+
+    // Font Size
+    // FIXME: 6 Why does this variable need to be (re)defined in this file?
+    $md-min: 768px;
+
+    // Font size props (for static font sizes)
+    --fs-3: em(19px);
+    --fs-4: em(17.5px);
+    --fs-5: em(17.5px);
+    --fs-6: em(16px);
+    --fs-7: em(13px);
+    --fs-8: em(11px);
+
+    --fs-1: {
+        font-size: em(26px) / 2;
+        @media (--md-min) {
+            font-size: em(34px);
+        }
+    };
+    --fs-2: {
+        font-size: em(20px) / 2;
+        @media (--md-min) {
+            font-size: em(21px);
+        }
+    };
+    --fs-3: {
+        font-size: var(--fs-4) / 1.75;
+        @media (--md-min) {
+            font-size: var(--fs-4);
+        }
+    };
+    --fs-4: {
+        font-size: var(--fs-4);
+        @media (--md-min) {
+            font-size: var(--fs-4);
+        }
+    };
+    --fs-5: {
+        font-size: var(--fs-5);
+        @media (--md-min) {
+            font-size: var(--fs-5);
+        }
+    };
+    --fs-6: {
+        font-size: var(--fs-6);
+    };
+    --fs-7: {
+        font-size: var(--fs-7);
+    };
+    --fs-8: {
+        font-size: var(--fs-8);
+    };
+}

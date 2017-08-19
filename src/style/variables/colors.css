@@ -1,0 +1,26 @@
+// ==================================================================
+// COLORS
+// ==================================================================//
+
+:root {
+    // Custom Colors
+    --purple-lightest: #F5FBFD;
+    --purple-lighter: #E5F4F9;
+    --purple-light: #40B5DF;
+    --purple: #8B008B;
+    --purple-dark: #0080B0;
+    --purple-darker: #12769F;
+    --purple-darkest: #105B76;
+
+    --gray-lightest:#F2F2F2;
+    --gray-lighter: #DCDCDC;
+    --gray-light: #CACACA;
+    --gray: #969696;
+    --gray-dark: #757575;
+    --gray-darker: #575757;
+    --gray-darkest: #414141;
+
+    --black-lighter: #323232;
+    --black-light: #282828;
+    --black: #0B0B0B;
+}

@@ -1,0 +1,33 @@
+// ==================================================================
+// FONT SIZES
+// ==================================================================//
+
+html {
+    font-size: calc(var(--fs-base) * 0.8);   // shrink font for mobile
+    line-height: 1.4;
+
+    @media (--md-min) {
+        font-size: var(--fs-base);
+    }
+}
+
+.h1, .fs-1 { @apply --fs-1; }
+.h2, .fs-2 { @apply --fs-2; }
+.h3, .fs-3 { @apply --fs-3; }
+.h4, .fs-4 { @apply --fs-4; }
+.h5, .fs-5 { @apply --fs-5; }
+.h6, .fs-6 { @apply --fs-6; }
+.fs-7 { @apply --fs-7; }
+.fs-8 { @apply --fs-8; }
+
+p,
+blockquote,
+li {
+    @apply --fs-6;
+}
+
+input,
+textarea,
+select {
+    @apply --fs-6;
+}

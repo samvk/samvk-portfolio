@@ -1,0 +1,28 @@
+// ==================================================================
+// TYPOGRAPHY
+// ==================================================================//
+
+// accents
+.underline { text-decoration: underline; }
+.italic { font-style: italic; }
+.bold { font-weight: var(--semi-bold); }
+
+// text-align
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+// text-transform
+.uppercase { text-transform: uppercase; }
+.smallcaps { font-variant: small-caps; }
+
+// line-height
+.l0 { line-height: var(--lh-none); }
+.lhalf { line-height: var(--lh-half); }
+.l2 { line-height: var(--lh-2); }
+.l3 { line-height: var(--lh-3); }
+
+// whitespace
+.prewrap {
+    white-space: pre-wrap;
+}

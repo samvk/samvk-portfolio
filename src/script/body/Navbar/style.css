@@ -1,0 +1,11 @@
+.navbar {
+    padding: * 15px;
+    border-bottom: 0.25em solid var(--purple);
+    margin-bottom: 2.5em;
+}
+
+.navlink {
+    text-transform: uppercase;
+    font-weight: var(--bold);
+    margin: * 0.75em;
+}

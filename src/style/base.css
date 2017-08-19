@@ -1,0 +1,25 @@
+// ==================================================================
+// BASE ELEMENT RULES
+// ==================================================================
+
+// sticky footer
+html, body, #root, .body {
+    height: 100%;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+// text spacing
+p {
+    margin-bottom: 1em;
+}
+
+// accenting
+::selection { color: white color(var(--purple) alpha(25%)); }

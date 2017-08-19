@@ -1,0 +1,127 @@
+// ==================================================================
+// CSS RESET (resets the styling of all HTML elements to consistent cross-browser)
+// ==================================================================//
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    line-height: 1;
+}
+
+li {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+q, blockquote {
+    quotes: none;
+}
+
+q::before, q::after, blockquote::before, blockquote::after {
+    content: '';
+    content: none;
+}
+
+a img {
+    border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+// ==================================================================
+// CSS UPDATER (How some HTML tags should be defaulted)
+// ==================================================================//
+
+// default to border-box (while allowing module overrides to inherit)
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+hr {
+    border: 0;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    height: 1px;
+    overflow: visible; // visible pseudo elements
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: 0;
+    outline: 0;
+    color: inherit;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+input, textarea, select {
+    outline: 0;
+    border: 0;
+}
+
+textarea {
+    resize: vertical;
+    overflow: auto; // no scrollbar by default
+}
+
+// set inline elements to inline-block
+a, span, img {
+    display: inline-block;
+}
+
+// normalize sup/sub tags
+sub, sup {
+    position: relative;
+    vertical-align: baseline;
+    font-size: 0.85em;
+    line-height: 0;
+}
+
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+// remove outline on focused elements
+*:focus {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}

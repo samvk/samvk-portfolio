@@ -1,0 +1,53 @@
+// ==================================================================
+// LAYOUT
+// ==================================================================//
+
+// position
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+
+// display
+.block { display: block; }
+.inline-block { display: inline-block; }
+.inline { display: inline; }
+
+// size
+.full-width {
+    width: 100%;
+}
+
+// centering
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-abs {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+// visibility
+.hidden {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.invisible { visibility: hidden; }
+
+.display-none { display: none !important; }
+
+// overflow
+.overflow-hidden { overflow: hidden; }
+
+// z-index
+.z0 { z-index: var(--z-hidden); }
+.z2 { z-index: var(--z-pseudo); }
+.z3 { z-index: var(--z-nav); }
+.z4 { z-index: var(--z-dropdown); }
+.z5 { z-index: var(--z-popup); }
+
+.content-box { box-sizing: content-box; }

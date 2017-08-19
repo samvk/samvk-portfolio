@@ -1,0 +1,17 @@
+// ==================================================================
+// DEFAULT FONT COLOR
+// ==================================================================//
+
+html {
+    color: var(--gray-darker);
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6,
+.button,
+nav {
+    color: var(--black-light);
+}
+
+input, select, textarea {
+    color: var(--black-light);
+}

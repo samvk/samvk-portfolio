@@ -1,0 +1,70 @@
+// Note: In order to use these classNames as props, new classes must be added to the 'flexClassNames' array.
+.column {
+    flex-direction: column;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.wrapReverse {
+    flex-wrap: wrap-reverse;
+}
+// Note: "x, y, & row" have been used for class name simplicity. However, this must be mentally flipped when using flex-direction: column.
+.yReverse {
+    flex-direction: column-reverse;
+}
+.yStart {
+    align-items: flex-start;
+}
+.yEnd {
+    align-items: flex-end;
+}
+.yCenter {
+    align-items: center;
+}
+.yBaseline {
+    align-items: baseline;
+}
+.yStretch {
+    align-items: stretch;
+}
+.xReverse {
+    flex-direction: row-reverse;
+}
+.xStart {
+    justify-content: flex-start;
+}
+.xEnd {
+    justify-content: flex-end;
+}
+.xCenter {
+    justify-content: center;
+}
+.xBetween {
+    justify-content: space-between;
+}
+.xAround {
+    justify-content: space-around;
+}
+.rowStart {
+    align-content: flex-start;
+}
+.rowEnd {
+    align-content: flex-end;
+}
+.rowCenter {
+    align-content: center;
+}
+.rowBetween {
+    align-content: space-between;
+}
+.rowAround {
+    align-content: space-around;
+}
+.rowStretch {
+    align-content: stretch;
+}
+.auto {
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 0;
+}

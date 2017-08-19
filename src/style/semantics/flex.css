@@ -1,0 +1,110 @@
+// ==============================================================
+// FLEX LAYOUT
+// ==============================================================//
+
+// Note: "x, y, & row" have been used for class name simplicity. However, this must be mentally flipped when using flex-direction: column.
+
+.flex {
+    display: flex;
+}
+.inline-flex {
+    display: inline-flex;
+}
+.column {
+    flex-direction: column;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+.y-reverse {
+    flex-direction: column-reverse;
+}
+.y-start {
+    align-items: flex-start;
+}
+.y-end {
+    align-items: flex-end;
+}
+.y-center {
+    align-items: center;
+}
+.y-baseline {
+    align-items: baseline;
+}
+.y-stretch {
+    align-items: stretch;
+}
+.self-start {
+    align-self: flex-start;
+}
+.self-end {
+    align-self: flex-end;
+}
+.self-center {
+    align-self: center;
+}
+.self-baseline {
+    align-self: baseline;
+}
+.self-stretch {
+    align-self: stretch;
+}
+.x-reverse {
+    flex-direction: row-reverse;
+}
+.x-start {
+    justify-content: flex-start;
+}
+.x-end {
+    justify-content: flex-end;
+}
+.x-center {
+    justify-content: center;
+}
+.x-between {
+    justify-content: space-between;
+}
+.x-around {
+    justify-content: space-around;
+}
+.row-start {
+    align-content: flex-start;
+}
+.row-end {
+    align-content: flex-end;
+}
+.row-center {
+    align-content: center;
+}
+.row-between {
+    align-content: space-between;
+}
+.row-around {
+    align-content: space-around;
+}
+.row-stretch {
+    align-content: stretch;
+}
+.auto {
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 0;
+}
+.order-0 {
+    order: 0;
+}
+.order-1 {
+    order: 1;
+}
+.order-2 {
+    order: 2;
+}
+.order-3 {
+    order: 3;
+}
+.order-last {
+    order: 9999;
+}

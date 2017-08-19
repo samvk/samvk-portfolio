@@ -1,0 +1,10 @@
+// ==================================================================
+// DESIGN
+// ==================================================================//
+
+// border-radius
+.rounded { border-radius: 6px; }
+.circle { border-radius: 50%; }
+
+// no wrap
+.no-line-wrap { white-space: nowrap; }

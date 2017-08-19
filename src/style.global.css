@@ -1,0 +1,36 @@
+// ==================================================================
+// CSS RESET
+// ==================================================================
+@import 'style/reset';
+
+// ==================================================================
+// CUSTOM VARIABLES and MIXINS
+// ==================================================================
+@import 'style/variables/variables';
+@import 'style/variables/colors';
+@import 'style/variables/mixins';
+@import 'style/variables/fonts';
+
+// ==================================================================
+// FONT RULES
+// ==================================================================
+@import 'style/fonts/font-sizes';
+@import 'style/fonts/font-family';
+@import 'style/fonts/font-colors';
+
+// ==================================================================
+// SEMANTIC CLASS NAMES
+// ==================================================================
+@import 'style/semantics/typography';
+@import 'style/semantics/design';
+@import 'style/semantics/layout';
+@import 'style/semantics/container';
+@import 'style/semantics/flex';
+@import 'style/semantics/images';
+@import 'style/semantics/tags';
+
+// ==================================================================
+// BASE and COMPONENT ELEMENT RULES
+// ==================================================================
+@import 'style/base';
+@import 'style/components/index';
