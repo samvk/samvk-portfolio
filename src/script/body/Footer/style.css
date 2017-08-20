@@ -1,6 +1,6 @@
 .footer {
-    position: relative;
-    border-bottom: 0.33em solid var(--purple-darker);
+    background-color: var(--gray-lightest);
+    padding: * 15px;
 }
 
 .message {
@@ -11,6 +11,7 @@
 
 .copyright {
     position: absolute;
+    top: 50%;
     right: 0;
-    bottom: 0;
+    transform: translateY(-50%);
 }

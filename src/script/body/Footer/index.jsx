@@ -26,15 +26,17 @@ export default class Footer extends React.Component {
                 styleName='footer'
                 {...props}
             >
-                <div>
-                    <h6 styleName='message'>
+                <div className='relative'>
+                    <div>
+                        <h6 styleName='message'>
                         Powered by&nbsp;<Image src='react.png' title='React' />
-                    </h6>
-                    <h6 styleName='message'>
+                        </h6>
+                        <h6 styleName='message'>
                         Hosted on my&nbsp;<Image src='raspberry.png' title='Raspberry Pi' /><Image src='pie.png' title='Raspberry Pi' />
-                    </h6>
+                        </h6>
+                    </div>
+                    <span styleName='copyright'>2017 &copy; Emma Simon</span>
                 </div>
-                <span styleName='copyright'>2017 &copy; Emma Simon</span>
             </footer>
         );
     }
