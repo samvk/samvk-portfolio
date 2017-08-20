@@ -11,7 +11,10 @@ export default class PortfolioCard extends React.Component {
     static propTypes = {
         className: PropTypes.string,
         children: PropTypes.node.isRequired,
-        title: PropTypes.string.isRequired,
+        title: PropTypes.oneOfType([
+            PropTypes.object,
+            PropTypes.string,
+        ]).isRequired,
     }
 
     static defaultProps = {
