@@ -8,12 +8,16 @@
     text-transform: uppercase;
     font-weight: var(--bold);
     margin: * 0.75em;
+
+    & a {
+        padding-bottom: 0.5em;
+    }
 }
 
-.navlink a {
-    padding-bottom: 0.5em;
+:global(.active-link) {
+    transform: none;
 
-    &:global(.active-link)::after {
+    &::after {
         content: '';
         position: absolute;
         bottom: 0;
