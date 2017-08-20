@@ -39,6 +39,7 @@ export default class Link extends React.Component {
 
         // only style like text link is specified
         const myProps = {
+            className,
             styleName: classNames('link', { text }, { 'external-link': external }),
             ...props,
         };
