@@ -34,13 +34,13 @@ export default class About extends React.Component {
                         <p>
                             Feel free to <Link
                                 text
-                                to='https://linkedin.com/in/emma-simon'
+                                to='/resume'
                             >
                                 take a look at my resume
                             </Link> or you can <Link
                                 external
                                 text
-                                to='/resume'
+                                to='https://linkedin.com/in/emma-simon'
                             >
                                 connect with me on LinkedIn
                             </Link> to see my past experience.
