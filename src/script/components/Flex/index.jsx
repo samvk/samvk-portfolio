@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import CSSModules from 'react-css-modules';
 import styles from './style.css';
 
-@CSSModules(styles)
+@CSSModules(styles, { allowMultiple: true })
 export default class Flex extends React.Component {
     static propTypes = {
         inline: PropTypes.bool,
