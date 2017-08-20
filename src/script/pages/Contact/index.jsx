@@ -8,7 +8,7 @@ import styles from './style.css';
 import Link from 'components/Link';
 import PortfolioCard from 'components/PortfolioCard';
 
-@pageTitle('Portfolio')
+@pageTitle('Contact')
 // @CSSModules(styles, { allowMultiple: true, errorWhenNotFound: false })
 export default class Home extends React.Component {
     render() {
