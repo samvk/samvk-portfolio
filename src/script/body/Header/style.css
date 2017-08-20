@@ -22,13 +22,13 @@
             white-space: nowrap;
             overflow: hidden;
             transform: translateX(calc(50% - 3rem));
-            transition: transform 350ms linear;
+            transition: transform 500ms ease;
         }
 
         .title-text {
             transform: translateX(-100%);
             opacity: 0;
-            transition: transform 350ms linear, opacity 350ms linear;
+            transition: transform 500ms ease, opacity 500ms ease;
         }
 
         @media (--sm-min) {
