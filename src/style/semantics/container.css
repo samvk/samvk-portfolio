@@ -21,7 +21,7 @@
             width: 960px;
         }
         @media (--xl-min) {
-            width: 1140px;
+            // width: 1140px;
         }
     }
 }

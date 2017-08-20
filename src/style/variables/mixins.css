@@ -24,22 +24,18 @@
 $sm-min: 576px;
 $md-min: 768px; // Note: also defined in `variables/fonts.css`
 $lg-min: 992px;
-$xl-min: 1200px;
 
 $xs-max: ($sm-min - 1);
 $sm-max: ($md-min - 1);
 $md-max: ($lg-min - 1);
-$lg-max: ($xl-min - 1);
 
 @custom-media --sm-min (min-width: $sm-min);
 @custom-media --md-min (min-width: $md-min);
 @custom-media --lg-min (min-width: $lg-min);
-@custom-media --xl-min (min-width: $xl-min);
 
 @custom-media --xs-max (max-width: $xs-max);
 @custom-media --sm-max (max-width: $sm-max);
 @custom-media --md-max (max-width: $md-max);
-@custom-media --lg-max (max-width: $lg-max);
 
 :root {
     --color-transition: {
