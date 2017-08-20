@@ -5,6 +5,7 @@ import CSSModules from 'react-css-modules';
 import styles from './style.css';
 
 import Flex from 'components/Flex';
+import Image from 'components/Image';
 
 @pageTitle('Page Not Found')
 @CSSModules(styles)
@@ -16,7 +17,7 @@ export default class FourOhFour extends React.Component {
                     styleName='header'
                     title='404 — Page Not Found'
                 >
-                    4<img src='/src/img/logo.png' alt='Emma Simon' />4
+                    4<Image src='/src/img/logo.png' />4
                 </h1>
                 <p className='h1'>Page not found.</p>
             </Flex>

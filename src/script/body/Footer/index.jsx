@@ -5,6 +5,8 @@ import classNames from 'classnames';
 import CSSModules from 'react-css-modules';
 import styles from './style.css';
 
+import Image from 'components/Image';
+
 @CSSModules(styles)
 export default class Footer extends React.Component {
     static propTypes = {
@@ -25,8 +27,8 @@ export default class Footer extends React.Component {
                 {...props}
             >
                 <div>
-                    <h6 styleName='message'>Powered by&nbsp;<span title='React'><img src='src/img/react.png' alt='' /></span></h6>
-                    <h6 styleName='message'>Hosted on my&nbsp;<span title='Raspberry Pi'><img src='src/img/raspberry.png' alt='' /><img src='src/img/pie.png' alt='' /></span></h6>
+                    <h6 styleName='message'>Powered by&nbsp;<span title='React'><Image src='src/img/react.png' /></span></h6>
+                    <h6 styleName='message'>Hosted on my&nbsp;<span title='Raspberry Pi'><Image src='src/img/raspberry.png' alt='' /><Image src='src/img/pie.png' /></span></h6>
                 </div>
             </footer>
         );

@@ -6,6 +6,7 @@ import CSSModules from 'react-css-modules';
 import styles from './style.css';
 
 import Flex from 'components/Flex';
+import Image from 'components/Image';
 
 @CSSModules(styles)
 export default class Header extends React.Component {
@@ -27,7 +28,7 @@ export default class Header extends React.Component {
                 {...props}
             >
                 <Flex xCenter>
-                    <span><img src='src/img/logo.png' alt='Emma Simon' /></span>
+                    <span><Image src='src/img/logo.png' alt='Emma Simon' /></span>
                     <h1>Emma Simon</h1>
                 </Flex>
             </header>
