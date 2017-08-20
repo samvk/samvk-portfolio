@@ -19,6 +19,7 @@
             display: inline-flex;
             align-items: center;
             margin: * auto;
+            white-space: nowrap;
             overflow: hidden;
             transform: translateX(calc(50% - 3rem));
             transition: transform 350ms linear;
