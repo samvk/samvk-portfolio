@@ -51,7 +51,7 @@ export default class Home extends React.Component {
                         <article>
                             <h2>Skills</h2>
                             <section>
-                                <h3>Konica Minolta, August 2015 - Now</h3>
+                                <h3 />
                                 <ul>
                                     <li>Proficient with Python, Javascript, HTML, CSS</li>
                                     <li>Some experience with Go, Java, C++, SQL</li>
