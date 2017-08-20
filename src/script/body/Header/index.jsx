@@ -28,7 +28,7 @@ export default class Header extends React.Component {
                 {...props}
             >
                 <Flex xCenter>
-                    <span><Image src='src/img/logo.png' alt='Emma Simon' /></span>
+                    <span><Image src='logo.png' alt='Emma Simon' /></span>
                     <h1>Emma Simon</h1>
                 </Flex>
             </header>

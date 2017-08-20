@@ -7,26 +7,32 @@ export default class Image extends React.Component {
         alt: PropTypes.string,
         title: PropTypes.string,
         altTitle: PropTypes.string,
-        className: PropTypes.string,
         block: PropTypes.bool,
+        className: PropTypes.string,
+        src: PropTypes.string.isRequired,
+        url: PropTypes.string, // use if source is not local
     }
 
     static defaultProps = {
         alt: '',
         title: '',
+        block: false,
         altTitle: '',
         className: '',
-        block: false,
+        url: '',
     }
 
     render() {
-        const { alt, title, altTitle, className, block, ...props } = this.props;
+        let { alt, title, altTitle, block, className, src, url, ...props } = this.props;
+
+        src = `/src/img/${src}`;
 
         return (
             <img
                 alt={alt || altTitle}
-                title={title || altTitle}
                 className={classNames(className, { block })}
+                title={title || altTitle}
+                src={url || src}
                 {...props}
             />
         );

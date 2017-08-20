@@ -17,7 +17,7 @@ export default class FourOhFour extends React.Component {
                     styleName='header'
                     title='404 — Page Not Found'
                 >
-                    4<Image src='/src/img/logo.png' />4
+                    4<Image src='logo.png' />4
                 </h1>
                 <p className='h1'>Page not found.</p>
             </Flex>
