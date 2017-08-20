@@ -29,3 +29,7 @@ p {
 
 // accenting
 ::selection { color: white color(var(--purple) alpha(25%)); }
+
+.loud {
+    font-weight: var(--bold);
+}
