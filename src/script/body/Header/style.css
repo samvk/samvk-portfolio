@@ -1,4 +1,42 @@
 .header {
     font-size: 2rem;
     padding: 0.5em 15px;
+
+    & {
+        .title-wrapper {
+            overflow: hidden;
+            max-width: 550px;
+        }
+
+        .logo {
+            width: 6rem;
+            margin-right: 0.5rem;
+            background-color: white;
+            z-index: 1; // icon in front of text
+        }
+
+        .title {
+            display: inline-flex;
+            align-items: center;
+            margin: * auto;
+            overflow: hidden;
+            transform: translateX(calc(50% - 3rem));
+            transition: transform 350ms linear;
+        }
+
+        .title-text {
+            transform: translateX(-100%);
+            opacity: 0;
+            transition: transform 350ms linear, opacity 350ms linear;
+        }
+
+        .title-wrapper .title:hover {
+            transform: none;
+
+            .title-text {
+                transform: none;
+                opacity: 1;
+            }
+        }
+    }
 }
