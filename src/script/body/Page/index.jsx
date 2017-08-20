@@ -10,7 +10,9 @@ import FourOhFour from 'pages/FourOhFour';
 export default class Page extends React.Component {
     render() {
         return (
-            <div className='container'>
+            <div
+                className='page'
+            >
                 <Switch>
                     <Route exact path='/' component={About} />
                     <Route exact path='/resume' component={Resume} />

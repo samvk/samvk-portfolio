@@ -16,6 +16,12 @@ html, body, #root, .body {
     margin-top: auto;
 }
 
+.page {
+    @extend .container;
+
+    margin-bottom: 6em;
+}
+
 // text spacing
 p {
     margin-bottom: 1em;
