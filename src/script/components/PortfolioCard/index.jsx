@@ -18,12 +18,9 @@ export default class PortfolioCard extends React.Component {
         className: '',
     }
 
-    state = {
-        open: false,
-    }
-
     render() {
         const { className, children, title, ...props } = this.props;
+
         return (
             <section
                 className={classNames(className)}
@@ -32,11 +29,6 @@ export default class PortfolioCard extends React.Component {
                 <h1
                     className='text-center'
                     styleName='title'
-                    onClick={() => {
-                        this.setState((state) => ({
-                            open: !state.open,
-                        }));
-                    }}
                 >
                     {title}
                 </h1>
