@@ -19,17 +19,6 @@ export default class Home extends React.Component {
                 >
                     <div>
                         <article>
-                            <h2>Education</h2>
-                            <section>
-                                <h3>University of Massachusetts Amherst, 2011 - 2015</h3>
-                                <ul>
-                                    <li>B.S. in Computer Science</li>
-                                    <li>Minor in Anthropology</li>
-                                </ul>
-                            </section>
-                        </article>
-
-                        <article>
                             <h2>Experience</h2>
                             <section>
                                 <h3>Konica Minolta, August 2015 - Now</h3>
@@ -44,6 +33,17 @@ export default class Home extends React.Component {
                                 <ul>
                                     <li>Tutor students in CS and calculus</li>
                                     <li>Help them work through concepts and ideas</li>
+                                </ul>
+                            </section>
+                        </article>
+
+                        <article>
+                            <h2>Education</h2>
+                            <section>
+                                <h3>University of Massachusetts Amherst, 2011 - 2015</h3>
+                                <ul>
+                                    <li>B.S. in Computer Science</li>
+                                    <li>Minor in Anthropology</li>
                                 </ul>
                             </section>
                         </article>
