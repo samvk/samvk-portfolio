@@ -30,12 +30,14 @@
             transition: transform 350ms linear, opacity 350ms linear;
         }
 
-        .title-wrapper .title:hover {
-            transform: none;
-
-            .title-text {
+        @media (--sm-min) {
+            .title-wrapper .title:hover {
                 transform: none;
-                opacity: 1;
+
+                .title-text {
+                    transform: none;
+                    opacity: 1;
+                }
             }
         }
     }
