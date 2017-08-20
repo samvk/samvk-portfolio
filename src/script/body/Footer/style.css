@@ -1,4 +1,5 @@
 .footer {
+    position: relative;
     border-bottom: 0.33em solid var(--purple-darker);
 }
 
@@ -6,4 +7,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.copyright {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }

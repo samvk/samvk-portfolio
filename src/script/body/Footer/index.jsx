@@ -34,6 +34,7 @@ export default class Footer extends React.Component {
                         Hosted on my&nbsp;<Image src='raspberry.png' title='Raspberry Pi' /><Image src='pie.png' title='Raspberry Pi' />
                     </h6>
                 </div>
+                <span styleName='copyright'>2017 &copy; Emma Simon</span>
             </footer>
         );
     }
