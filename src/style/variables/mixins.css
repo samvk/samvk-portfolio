@@ -62,8 +62,6 @@ $lg-max: ($xl-min - 1);
 
 @mixin active($color: null, $background: null) {
     &:active {
-        transition: none; // show active styling immediately
-
         color: $color;
         background-color: $background;
         @content;
