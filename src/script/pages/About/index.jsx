@@ -5,42 +5,45 @@ import pageTitle from 'react-document-title-decorator';
 import CSSModules from 'react-css-modules';
 import styles from './style.css';
 
+import Image from 'components/Image';
 import Link from 'components/Link';
 import PortfolioCard from 'components/PortfolioCard';
 
 @pageTitle('Portfolio')
-// @CSSModules(styles, { allowMultiple: true, errorWhenNotFound: false })
-export default class Home extends React.Component {
+@CSSModules(styles)
+export default class About extends React.Component {
     render() {
         return (
             <article>
                 <PortfolioCard
-                    title='About'
+                    title={
+                        <Image
+                            src='headshot.png'
+                            styleName='headshot'
+                        />
+                    }
                 >
                     <div>
+                        <h1 className='text-center'>Hi, I'm Emma.</h1>
                         <p>
-                            Hi, my name's Sam. I'm a twenty-something year old front-end web developer who loves building apps and bringing others' designs to life. My go-to technologies right now are HTML5, CSS3, Sass(SCSS), and JavaScript(ES6) + jQuery.  I'm in the process of learning PHP &amp; MySQL to become a better front-end coder and future full-stack developer.
+                            I'm a web developer who likes figuring out how things work. I have the most experience with Python and Javascript, and recently I've started using React and HTML5. Usually it's more fun for me to do logic and backend stuff. But I enjoy making things look pretty too.
                         </p>
                         <p>
-                            On a personal note: I love metal detecting, watching movies, the theatre, and building things.
+                            When I'm not working, I like playing video games, climbing mountains, and eating food.
                         </p>
                         <p>
-                            You can <Link
+                            Feel free to <Link
+                                text
+                                to='https://linkedin.com/in/emma-simon'
+                            >
+                                take a look at my resume
+                            </Link> or you can <Link
                                 external
                                 text
-                                to='https://github.com/samvk'
+                                to='/resume'
                             >
-                                check me out on GitHub
-                            </Link>, <Link
-                                external
-                                text
-                                to='https://linkedin.com/in/samvk'
-                            >
-                                find me on LinkedIn
-                            </Link>, <Link
-                                text
-                                to='docs/SamKauffman_Resume.pdf'
-                            >take a look at my resume</Link>, or view some of my projects below.
+                                connect with me on LinkedIn
+                            </Link> to see my past experience.
                         </p>
                     </div>
                 </PortfolioCard>
