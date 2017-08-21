@@ -56,7 +56,7 @@
         }
     };
     --fs-3: {
-        font-size: var(--fs-4) / 1.75;
+        font-size: var(--fs-4) / 2;
         @media (--md-min) {
             font-size: var(--fs-4);
         }
