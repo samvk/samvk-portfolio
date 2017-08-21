@@ -15,10 +15,10 @@ export default class Image extends React.Component {
 
     static defaultProps = {
         alt: '',
-        title: '',
-        block: false,
-        altTitle: '',
-        className: '',
+        title: null,
+        block: null,
+        altTitle: null,
+        className: null,
         url: '',
     }
 
