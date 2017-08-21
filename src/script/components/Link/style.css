@@ -10,7 +10,11 @@
     padding-left: 0.25em;
 }
 
-.text,
+.text {
+    color: var(--purple);
+    @include hover(var(--purple-light));
+}
+
 :global(.active-link) {
     color: var(--purple);
     @include hover(var(--purple));
