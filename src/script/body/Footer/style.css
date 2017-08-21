@@ -1,5 +1,6 @@
 .footer {
     background-color: var(--gray-lightest);
+    border-top: 2px solid var(--gray-lighter);
     padding: * 15px;
 }
 
@@ -7,6 +8,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--gray-darker);
+    margin: 0.25em;
+}
 
 .icon {
     width: 24px;
