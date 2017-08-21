@@ -28,19 +28,18 @@ export default class Header extends React.Component {
                 styleName='header'
                 {...props}
             >
-                <Flex xCenter>
+                <Flex xCenter styleName='title-container'>
                     <div styleName='title-wrapper'>
                         <Link
                             to='/'
                             styleName='title'
                         >
                             <span styleName='logo'>
-                                <Image
-                                    src='logo.png'
-                                    alt='Emma Simon'
-                                />
+                                <Image src='logo.png' alt='Emma Simon' />
                             </span>
-                            <h1 styleName='title-text'>Emma Simon</h1>
+                            <span styleName='title-text-wrapper'>
+                                <h1 styleName='title-text'>Emma Simon</h1>
+                            </span>
                         </Link>
                     </div>
                 </Flex>

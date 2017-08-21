@@ -3,30 +3,35 @@
     padding: 0.5em 15px;
 
     & {
-        .title-wrapper {
+        .title-container {
             overflow: hidden;
+        }
+
+        .title-wrapper {
             max-width: 550px;
         }
 
         .logo {
-            width: 6rem;
-            margin-right: 0.5rem;
-            background-color: white;
+            size: 6rem;
             z-index: 1; // icon in front of text
+            transition: transform 500ms ease;
         }
 
         .title {
             display: inline-flex;
             align-items: center;
-            margin: * auto;
             white-space: nowrap;
-            overflow: hidden;
             transform: translateX(calc(50% - 3rem));
             transition: transform 500ms ease;
         }
 
+        .title-text-wrapper {
+            overflow-x: hidden;
+            padding-left: 2rem;
+        }
+
         .title-text {
-            transform: translateX(-100%);
+            transform: translateX(-108%);
             opacity: 0;
             transition: transform 500ms ease, opacity 500ms ease;
         }
@@ -38,6 +43,10 @@
                 .title-text {
                     transform: none;
                     opacity: 1;
+                }
+
+                .logo {
+                    transform: rotate(-100deg);
                 }
             }
         }
