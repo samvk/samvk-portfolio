@@ -29,10 +29,10 @@ export default class Footer extends React.Component {
                 <div className='relative'>
                     <div>
                         <h6 styleName='message' title='React'>
-                        Powered by&nbsp;<Image src='react.png' />
+                        Powered by&nbsp;<Image styleName='icon' src='react.png' />
                         </h6>
                         <h6 styleName='message' title='Raspberry Pi'>
-                        Hosted on my&nbsp;<Image src='raspberry.png' /><Image src='pie.png' />
+                        Hosted on my&nbsp;<Image styleName='icon' src='raspberry.png' /><Image styleName='icon' src='pie.png' />
                         </h6>
                     </div>
                     <span styleName='copyright'>2017 &copy; Emma Simon</span>
