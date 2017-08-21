@@ -9,9 +9,9 @@ html {
 .h1, .h2, .h3, .h4, .h5, .h6,
 .button,
 nav {
-    color: var(--black-light);
+    color: var(--black);
 }
 
 input, select, textarea {
-    color: var(--black-light);
+    color: var(--black);
 }

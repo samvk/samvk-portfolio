@@ -4,11 +4,8 @@
 
 :root {
     // Custom Colors
-    --purple-light: #BE00BE;
+    --purple-light: #A840A8;
     --purple: #8B008B;
-    --purple-dark: #61006A;
-    --purple-darker: #460056;
-    --purple-darkest: #310045;
 
     --gray-lightest:#F2F2F2;
     --gray-lighter: #DCDCDC;
@@ -18,7 +15,5 @@
     --gray-darker: #575757;
     --gray-darkest: #414141;
 
-    --black-lighter: #323232;
-    --black-light: #282828;
-    --black: #0B0B0B;
+    --black: #282828;
 }
