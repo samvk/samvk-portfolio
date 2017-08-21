@@ -4,6 +4,15 @@
     padding: * 15px;
 }
 
+.content {
+    width: 375px;
+}
+
+.footer .logo {
+    font-size: 1.75rem;
+}
+
+
 .message {
     display: flex;
     justify-content: center;
@@ -17,9 +26,14 @@
 }
 
 .copyright {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
     color: var(--gray-darkest);
+    text-align: center;
+    padding: 0.75em *;
+
+    @media (--md-min) {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
 }
