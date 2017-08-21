@@ -53,6 +53,7 @@ export default class Header extends React.Component {
                                 <Link
                                     external
                                     to='https://github.com/emmasimon'
+                                    className='external-link'
                                 >
                                 GitHub
                             </Link>
