@@ -9,7 +9,7 @@ import Link from 'components/Link';
 import PortfolioCard from 'components/PortfolioCard';
 
 @pageTitle('Contact')
-// @CSSModules(styles, { allowMultiple: true, errorWhenNotFound: false })
+@CSSModules(styles)
 export default class Home extends React.Component {
     render() {
         return (
@@ -17,9 +17,9 @@ export default class Home extends React.Component {
                 <PortfolioCard
                     title='Contact'
                 >
-                    <div>
-                        <p>(508) 493 1601</p>
-                        <p>
+                    <div styleName='content'>
+                        <p className='text-center'>(508) 493 1601</p>
+                        <p className='text-center'>
                             <a href='mailto:emmamaysimon@gmail.com'>EmmaMaySimon@gmail.com</a>
                         </p>
                     </div>
