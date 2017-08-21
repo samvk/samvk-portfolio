@@ -2,6 +2,12 @@
 // BASE ELEMENT RULES
 // ==================================================================
 
+// html
+// add scrollbar to all pages to prevent resizing
+html {
+    overflow-y: scroll;
+}
+
 // sticky footer
 html, body, #root, .body {
     height: 100%;
