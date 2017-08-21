@@ -36,7 +36,7 @@
     $md-min: 768px;
 
     // Font size props (for static font sizes)
-    --fs-3: em(19px);
+    --fs-3: em(22px);
     --fs-4: em(17.5px);
     --fs-5: em(17.5px);
     --fs-6: em(16px);
@@ -50,9 +50,9 @@
         }
     };
     --fs-2: {
-        font-size: em(20px) / 2;
+        font-size: em(23px) / 2;
         @media (--md-min) {
-            font-size: em(21px);
+            font-size: em(25px);
         }
     };
     --fs-3: {
