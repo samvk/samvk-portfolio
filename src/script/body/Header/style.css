@@ -7,7 +7,7 @@
             overflow: hidden;
         }
 
-        .title-wrapper {
+        .link {
             max-width: 550px;
             overflow: hidden;
         }
@@ -38,7 +38,7 @@
         }
 
         @media (--sm-min) {
-            .title-wrapper:hover {
+            .link:hover {
                 .title {
                     transform: none;
                 }

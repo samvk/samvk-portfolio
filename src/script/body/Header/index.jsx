@@ -29,7 +29,7 @@ export default class Header extends React.Component {
                 {...props}
             >
                 <Flex xCenter styleName='title-container'>
-                    <Link to='/' styleName='title-wrapper'>
+                    <Link to='/' styleName='link'>
                         <div styleName='title'>
                             <span styleName='logo'>
                                 <Image src='logo.png' alt='Emma Simon' />
