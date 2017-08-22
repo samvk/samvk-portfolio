@@ -9,6 +9,7 @@
 
         .title-wrapper {
             max-width: 550px;
+            overflow: hidden;
         }
 
         .logo {
@@ -37,8 +38,10 @@
         }
 
         @media (--sm-min) {
-            .title-wrapper .title:hover {
-                transform: none;
+            .title-wrapper:hover {
+                .title {
+                    transform: none;
+                }
 
                 .title-text {
                     transform: none;
