@@ -20,9 +20,10 @@ export default class Home extends React.Component {
                 >
                     <form>
                         <Input title='Name' required />
-                        <Input title='Email Address' required />
+                        <Input title='Email Address' type='email' required />
                         <Input title='Phone Number' />
-                        <Textarea title='Message' />
+                        <Textarea title='Message' required />
+                        <button className='full-width' type='submit'>Submit</button>
                     </form>
                 </PortfolioCard>
             </article>
