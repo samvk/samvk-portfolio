@@ -12,6 +12,7 @@ export default class Input extends React.Component {
         children: PropTypes.node,
         maxLength: PropTypes.number,
         required: PropTypes.bool,
+        spellCheck: PropTypes.bool,
         title: PropTypes.string.isRequired,
         type: PropTypes.string,
     }
@@ -21,12 +22,13 @@ export default class Input extends React.Component {
         children: null,
         maxLength: 99,
         required: false,
+        spellCheck: false,
         type: 'text',
     }
 
 
     render() {
-        const { className, children, maxLength, required, title, type, ...props } = this.props;
+        const { className, children, maxLength, required, spellCheck, title, type, ...props } = this.props;
 
         const placeholderText = title + (required ? '' : ' (optional)');
 
@@ -43,6 +45,7 @@ export default class Input extends React.Component {
                         type={type}
                         value={children}
                         required={required}
+                        spellCheck={spellCheck}
                     />
                     <div styleName='title'>{title}</div>
                 </label>
