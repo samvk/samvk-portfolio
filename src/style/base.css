@@ -33,6 +33,19 @@ p {
     margin-bottom: 1em;
 }
 
+// button
+.button {
+    cursor: pointer;
+    color: white var(--purple-light);
+    padding: 1em 2em;
+    border-radius: 3px;
+
+    @include hover(null, var(--purple));
+    @include active(null, var(--purple-dark)) {
+        transition: none;
+    }
+}
+
 // accenting
 ::selection { color: white color(var(--purple) alpha(25%)); }
 
