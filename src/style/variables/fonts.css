@@ -11,25 +11,13 @@
     // Font Family
     --ff-primary: 'Playfair Display', system-ui;
     --ff-secondary: 'Lato', system-ui;
-    --ff-accent: system-ui;
-    --ff-loud: system-ui;
-    --ff-logo: system-ui;
 
     // Font Weights
     --lighter: 100;
     --light: 300;
     --normal: 400;
-    --medium-bold: 500;
-    --semi-bold: 600;
     --bold: 700;
     --bolder: 900;
-
-    // Line Heights
-    --lh-none: 1;
-    --lh-half: 1.2;
-    --lh-base: 1.4;
-    --lh-2: 1.7;
-    --lh-3: 2;
 
     // Font Size
     // FIXME: 6 Why does this variable need to be (re)defined in this file?
