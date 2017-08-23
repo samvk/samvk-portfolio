@@ -14,3 +14,5 @@ h6 { @extend .h6; }
 u { @extend .underline; }
 em { @extend .italic; }
 strong { @extend .bold; }
+
+button { @extend .button; }

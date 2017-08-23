@@ -22,7 +22,7 @@ li {
 }
 
 .button {
-    font-family: var(--ff-secondary);
+    font: var(--bolder) 1rem var(--ff-primary);
 }
 
 input,
