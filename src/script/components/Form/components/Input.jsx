@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import CSSModules from 'react-css-modules';
 import styles from './style.css';
 
-@CSSModules(styles)
+@CSSModules(styles, { allowMultiple: true })
 export default class Input extends React.Component {
     static propTypes = {
         className: PropTypes.string,
@@ -32,18 +32,19 @@ export default class Input extends React.Component {
 
         return (
             <div
-                className={classNames(className)}
+                className={classNames(className, 'relative')}
                 {...props}
             >
                 <label>
-                    <div>{title}</div>
                     <input
+                        styleName='field'
                         maxLength={maxLength}
                         placeholder={placeholderText}
                         type={type}
                         value={children}
                         required={required}
                     />
+                    <div styleName='title'>{title}</div>
                 </label>
             </div>
         );

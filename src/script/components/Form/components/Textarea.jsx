@@ -5,8 +5,8 @@ import classNames from 'classnames';
 import CSSModules from 'react-css-modules';
 import styles from './style.css';
 
-@CSSModules(styles)
-export default class Input extends React.Component {
+@CSSModules(styles, { allowMultiple: true })
+export default class Textarea extends React.Component {
     static propTypes = {
         className: PropTypes.string,
         children: PropTypes.node,
@@ -30,18 +30,19 @@ export default class Input extends React.Component {
 
         return (
             <div
-                className={classNames(className)}
+                className={classNames(className, 'relative')}
                 {...props}
             >
                 <label>
-                    <div>{title}</div>
                     <textarea
+                        styleName='field textarea'
                         maxLength={maxLength}
                         placeholder={placeholderText}
                         required={required}
                     >
                         {children}
                     </textarea>
+                    <div styleName='title'>{title}</div>
                 </label>
             </div>
         );
