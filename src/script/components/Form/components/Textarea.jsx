@@ -38,10 +38,9 @@ export default class Textarea extends React.Component {
                         styleName='field textarea'
                         maxLength={maxLength}
                         placeholder={placeholderText}
+                        value={children}
                         required={required}
-                    >
-                        {children}
-                    </textarea>
+                    />
                     <div styleName='title'>{title}</div>
                 </label>
             </div>
