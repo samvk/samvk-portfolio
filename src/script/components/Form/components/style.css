@@ -1,0 +1,34 @@
+.field {
+    background-color: var(--gray-lighter);
+    width: 100%;
+    border-radius: 3px;
+    padding: 0.6em 0.9em;
+    margin-bottom: 1.75em;
+    box-shadow: none;
+}
+
+.textarea {
+    height: 9em;
+}
+
+.title {
+    cursor: text;
+    color: var(--gray-dark);
+    font-size: var(--fs-7);
+    font-weight: var(--bold);
+    position: absolute;
+    top: 0;
+    opacity: 0;
+
+    transition: opacity 500ms, transform 500ms;
+}
+
+.field:focus + .title {
+    color: var(--purple);
+}
+
+// display title above when placeholder not shown
+.field:not(:placeholder-shown) + .title {
+    opacity: 1;
+    transform: translateY(-100%);
+}
