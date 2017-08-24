@@ -5,7 +5,7 @@ import pageTitle from 'react-document-title-decorator';
 // import CSSModules from 'react-css-modules';
 // import styles from './style.css';
 
-import { Input, Textarea } from 'components/Form';
+import { Form, Input, Textarea } from 'components/Form';
 import Link from 'components/Link';
 import PortfolioCard from 'components/PortfolioCard';
 
@@ -36,9 +36,8 @@ export default class Home extends React.Component {
                 <PortfolioCard
                     title='Contact'
                 >
-                    <form
-                        onSubmit={(e) => {
-                            e.preventDefault();
+                    <Form
+                        onSubmit={() => {
                         }}
                     >
                         <Input
@@ -79,7 +78,7 @@ export default class Home extends React.Component {
                         >
                             Submit
                         </button>
-                    </form>
+                    </Form>
                 </PortfolioCard>
             </article>
         );
