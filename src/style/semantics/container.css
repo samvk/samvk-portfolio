@@ -5,13 +5,13 @@
 // container
 .container {
     position: relative;
-    margin: * auto;
     padding: * 15px;
     max-width: 100%;
 
     // use .fluid on pages for full-width
     &:not(.fluid) {
         @media (--sm-min) {
+            margin: * auto;
             width: 540px;
         }
         @media (--md-min) {
