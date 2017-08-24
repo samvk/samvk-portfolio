@@ -31,7 +31,6 @@ export default class Textarea extends React.Component {
         return (
             <div
                 className={classNames(className, 'relative')}
-                {...props}
             >
                 <label>
                     <textarea
@@ -40,6 +39,7 @@ export default class Textarea extends React.Component {
                         placeholder={placeholderText}
                         value={children}
                         required={required}
+                        {...props}
                     />
                     <div styleName='title'>{title}</div>
                 </label>

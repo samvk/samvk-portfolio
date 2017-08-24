@@ -35,7 +35,6 @@ export default class Input extends React.Component {
         return (
             <div
                 className={classNames(className, 'relative')}
-                {...props}
             >
                 <label>
                     <input
@@ -46,6 +45,7 @@ export default class Input extends React.Component {
                         value={children}
                         required={required}
                         spellCheck={spellCheck}
+                        {...props}
                     />
                     <div styleName='title'>{title}</div>
                 </label>
