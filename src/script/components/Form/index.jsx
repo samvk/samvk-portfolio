@@ -1,2 +1,2 @@
-export Input from './components/Input';
-export Textarea from './components/Textarea';
+export Input from './components/field/Input';
+export Textarea from './components/field/Textarea';
