@@ -14,10 +14,12 @@ import PortfolioCard from 'components/PortfolioCard';
 export default class Home extends React.Component {
 
     state = {
-        name: '',
-        email: '',
-        phone: '',
-        message: '',
+        form: {
+            name: '',
+            email: '',
+            phone: '',
+            message: '',
+        },
     }
 
     handleInputChange = (e) => {
@@ -25,8 +27,11 @@ export default class Home extends React.Component {
         const name = input.name;
         const value = input.value;
 
-        this.setState(() => ({
-            [name]: value,
+        this.setState((state) => ({
+            form: {
+                ...state.form,
+                [name]: value,
+            },
         }));
     }
 
