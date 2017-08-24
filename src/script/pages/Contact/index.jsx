@@ -20,6 +20,16 @@ export default class Home extends React.Component {
         message: '',
     }
 
+    handleInputChange = (e) => {
+        const input = e.target;
+        const name = input.name;
+        const value = input.value;
+
+        this.setState(() => ({
+            [name]: value,
+        }));
+    }
+
     render() {
         return (
             <article>
@@ -29,53 +39,42 @@ export default class Home extends React.Component {
                     <form>
                         <Input
                             title='Name'
+                            name='name'
                             required
-                            onChange={(e) => {
-                                const value = e.target.value;
-                                this.setState(() => ({
-                                    name: value,
-                                }));
-                            }}
+                            onChange={this.handleInputChange}
                         >
                             {this.state.name}
                         </Input>
                         <Input
                             title='Email Address'
+                            name='email'
                             type='email'
                             required
-                            onChange={(e) => {
-                                const value = e.target.value;
-                                this.setState(() => ({
-                                    email: value,
-                                }));
-                            }}
+                            onChange={this.handleInputChange}
                         >
                             {this.state.email}
                         </Input>
                         <Input
                             title='Phone Number'
-                            onChange={(e) => {
-                                const value = e.target.value;
-                                this.setState(() => ({
-                                    phone: value,
-                                }));
-                            }}
+                            name='phone'
+                            onChange={this.handleInputChange}
                         >
                             {this.state.phone}
                         </Input>
                         <Textarea
                             title='Message'
+                            name='message'
                             required
-                            onChange={(e) => {
-                                const value = e.target.value;
-                                this.setState(() => ({
-                                    message: value,
-                                }));
-                            }}
+                            onChange={this.handleInputChange}
                         >
                             {this.state.message}
                         </Textarea>
-                        <button className='full-width' type='submit'>Submit</button>
+                        <button
+                            className='button full-width'
+                            type='submit'
+                        >
+                            Submit
+                        </button>
                     </form>
                 </PortfolioCard>
             </article>
