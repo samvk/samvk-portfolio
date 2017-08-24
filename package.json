@@ -10,6 +10,7 @@
   },
   "license": "UNLICENSED",
   "dependencies": {
+    "axios": "^0.16.2",
     "classnames": "^2.2.5",
     "postcss-not-x-child": "^1.0.0",
     "prop-types": "https://registry.npmjs.org/prop-types/-/prop-types-15.5.9.tgz",
