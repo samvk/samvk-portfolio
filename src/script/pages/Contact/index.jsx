@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 import pageTitle from 'react-document-title-decorator';
 
@@ -43,6 +44,8 @@ export default class Home extends React.Component {
                 >
                     <Form
                         onSubmit={() => {
+                            const formData = this.state.form;
+                            axios.post('/api/contact.php', formData);
                         }}
                     >
                         <Input
