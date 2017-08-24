@@ -36,7 +36,11 @@ export default class Home extends React.Component {
                 <PortfolioCard
                     title='Contact'
                 >
-                    <form>
+                    <form
+                        onSubmit={(e) => {
+                            e.preventDefault();
+                        }}
+                    >
                         <Input
                             title='Name'
                             name='name'
