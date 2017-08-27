@@ -105,7 +105,7 @@ export default class Home extends React.Component {
                         </Textarea>
                         <div className='relative'>
                             <Button
-                                className='button full-width'
+                                className='full-width'
                                 type='submit'
                                 pending={this.state.pending}
                                 disabled={isDisabled}

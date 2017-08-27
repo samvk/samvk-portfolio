@@ -38,7 +38,7 @@ export default class Button extends React.Component {
         return (
             <button
                 className={classNames(className, 'button')}
-                styleName={classNames({ disabled: isDisabled })}
+                styleName={classNames('button', { disabled: isDisabled })}
                 disabled={isDisabled}
                 {...props}
             >

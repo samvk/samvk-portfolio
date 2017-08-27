@@ -1,7 +1,23 @@
-.pending {
-    transform: scale(2);
+.button {
+    cursor: pointer;
+    color: white var(--purple-light);
+    padding: 1em 2em;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+
+    @include hover(null, var(--purple));
+    @include active(null, var(--purple-dark)) {
+        transition: none;
+    }
+    &:focus {
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.75);
+    }
 }
 
 .disabled {
     pointer-events: none;
+}
+
+.pending {
+    transform: scale(2);
 }
