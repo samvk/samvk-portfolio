@@ -1,6 +1,6 @@
 .headshot {
     border: rem(5px) solid var(--gray-lightest);
-    width: 360px;
+    size: 360px;
     border-radius: 50%;
     margin-top: 1rem;
 }
