@@ -38,16 +38,5 @@
 
 .invisible { visibility: hidden; }
 
-.display-none { display: none !important; }
-
 // overflow
 .overflow-hidden { overflow: hidden; }
-
-// z-index
-.z0 { z-index: var(--z-hidden); }
-.z2 { z-index: var(--z-pseudo); }
-.z3 { z-index: var(--z-nav); }
-.z4 { z-index: var(--z-dropdown); }
-.z5 { z-index: var(--z-popup); }
-
-.content-box { box-sizing: content-box; }

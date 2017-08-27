@@ -15,8 +15,3 @@
 // text-transform
 .uppercase { text-transform: uppercase; }
 .smallcaps { font-variant: small-caps; }
-
-// whitespace
-.prewrap {
-    white-space: pre-wrap;
-}

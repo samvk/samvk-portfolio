@@ -33,6 +33,13 @@ p {
     margin-bottom: 1em;
 }
 
+// accenting
+::selection { color: white color(var(--purple) alpha(25%)); }
+
+.loud {
+    font-weight: var(--bold);
+}
+
 // button
 .button {
     cursor: pointer;
@@ -46,13 +53,7 @@ p {
     }
 }
 
-// accenting
-::selection { color: white color(var(--purple) alpha(25%)); }
-
-.loud {
-    font-weight: var(--bold);
-}
-
+// link
 .external-link::after {
     font-awesome: external-link;
     font-size: 0.75em;

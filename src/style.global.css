@@ -6,7 +6,6 @@
 // ==================================================================
 // CUSTOM VARIABLES and MIXINS
 // ==================================================================
-@import 'style/variables/variables';
 @import 'style/variables/colors';
 @import 'style/variables/mixins';
 @import 'style/variables/fonts';
@@ -22,7 +21,6 @@
 // SEMANTIC CLASS NAMES
 // ==================================================================
 @import 'style/semantics/typography';
-@import 'style/semantics/design';
 @import 'style/semantics/layout';
 @import 'style/semantics/container';
 @import 'style/semantics/flex';
