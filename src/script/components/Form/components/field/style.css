@@ -23,6 +23,10 @@
     transition: opacity 500ms, transform 500ms;
 }
 
+.disabled {
+    opacity: 0.5;
+}
+
 .field:focus + .title {
     color: var(--purple);
 }

@@ -10,6 +10,7 @@ export default class Textarea extends React.Component {
     static propTypes = {
         className: PropTypes.string,
         children: PropTypes.node,
+        disabled: PropTypes.bool,
         maxLength: PropTypes.number,
         required: PropTypes.bool,
         title: PropTypes.string.isRequired,
@@ -18,13 +19,14 @@ export default class Textarea extends React.Component {
     static defaultProps = {
         className: '',
         children: null,
+        disabled: false,
         maxLength: 2000,
         required: false,
     }
 
 
     render() {
-        const { className, children, maxLength, required, title, ...props } = this.props;
+        const { className, children, disabled, maxLength, required, title, ...props } = this.props;
 
         const placeholderText = title + (required ? '' : ' (optional)');
 
@@ -34,11 +36,12 @@ export default class Textarea extends React.Component {
             >
                 <label>
                     <textarea
-                        styleName='field textarea'
+                        styleName={classNames(className, 'field textarea', { disabled })}
                         maxLength={maxLength}
                         placeholder={placeholderText}
                         value={children}
                         required={required}
+                        disabled={disabled}
                         {...props}
                     />
                     <div styleName='title'>{title}</div>

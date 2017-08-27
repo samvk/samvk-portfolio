@@ -10,6 +10,7 @@ export default class Input extends React.Component {
     static propTypes = {
         className: PropTypes.string,
         children: PropTypes.node,
+        disabled: PropTypes.bool,
         maxLength: PropTypes.number,
         required: PropTypes.bool,
         spellCheck: PropTypes.bool,
@@ -20,6 +21,7 @@ export default class Input extends React.Component {
     static defaultProps = {
         className: '',
         children: null,
+        disabled: false,
         maxLength: 99,
         required: false,
         spellCheck: false,
@@ -28,7 +30,7 @@ export default class Input extends React.Component {
 
 
     render() {
-        const { className, children, maxLength, required, spellCheck, title, type, ...props } = this.props;
+        const { className, children, disabled, maxLength, required, spellCheck, title, type, ...props } = this.props;
 
         const placeholderText = title + (required ? '' : ' (optional)');
 
@@ -38,12 +40,13 @@ export default class Input extends React.Component {
             >
                 <label>
                     <input
-                        styleName='field'
+                        styleName={classNames(className, 'field', { disabled })}
                         maxLength={maxLength}
                         placeholder={placeholderText}
                         type={type}
                         value={children}
                         required={required}
+                        disabled={disabled}
                         spellCheck={spellCheck}
                         {...props}
                     />
