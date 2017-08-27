@@ -3,15 +3,15 @@ import axios from 'axios';
 
 import pageTitle from 'react-document-title-decorator';
 
-// import CSSModules from 'react-css-modules';
-// import styles from './style.css';
+import CSSModules from 'react-css-modules';
+import styles from './style.css';
 
-import { Form, Input, Textarea } from 'components/Form';
+import { Form, Input, Textarea, Button } from 'components/Form';
 import Link from 'components/Link';
 import PortfolioCard from 'components/PortfolioCard';
 
 @pageTitle('Contact')
-// @CSSModules(styles)
+@CSSModules(styles)
 export default class Home extends React.Component {
 
     state = {
@@ -43,6 +43,8 @@ export default class Home extends React.Component {
                 >
                     <Form
                         onSubmit={() => {
+                            this.setState(() => ({ status: 'pending' }));
+
                             const formData = this.state.form;
                             axios.post('/api/contact.php', formData).then(({ data }) => {
                                 console.log(data);
@@ -85,12 +87,13 @@ export default class Home extends React.Component {
                         >
                             {this.state.message}
                         </Textarea>
-                        <button
+                        <Button
                             className='button full-width'
                             type='submit'
+                            pending={this.state.status === 'pending'}
                         >
                             {this.state.status}
-                        </button>
+                        </Button>
                     </Form>
                 </PortfolioCard>
             </article>
