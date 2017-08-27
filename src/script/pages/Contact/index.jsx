@@ -41,6 +41,9 @@ export default class Home extends React.Component {
     }
 
     render() {
+        // disabled form on submission or after success
+        const isDisabled = this.state.pending || this.state.status.success;
+
         return (
             <article>
                 <PortfolioCard
@@ -52,7 +55,11 @@ export default class Home extends React.Component {
 
                             const formData = this.state.form;
                             axios.post('/api/contact.php', formData).then(({ data }) => {
-                                this.setState(() => ({ status: data }));
+                                console.log(this.state);
+                                this.setState(() => ({
+                                    status: data,
+                                }));
+                                setTimeout(() => { console.log(this.state); }, 1000);
                             }).catch(({ response }) => {
                                 this.setState(() => ({ status: response.data }));
                             }).then(() => {
@@ -64,6 +71,7 @@ export default class Home extends React.Component {
                             title='Name'
                             name='name'
                             required
+                            disabled={isDisabled}
                             onChange={this.handleInputChange}
                         >
                             {this.state.name}
@@ -73,6 +81,7 @@ export default class Home extends React.Component {
                             name='email'
                             type='email'
                             required
+                            disabled={isDisabled}
                             onChange={this.handleInputChange}
                         >
                             {this.state.email}
@@ -80,6 +89,7 @@ export default class Home extends React.Component {
                         <Input
                             title='Phone Number'
                             name='phone'
+                            disabled={isDisabled}
                             onChange={this.handleInputChange}
                         >
                             {this.state.phone}
@@ -88,6 +98,7 @@ export default class Home extends React.Component {
                             title='Message'
                             name='message'
                             required
+                            disabled={isDisabled}
                             onChange={this.handleInputChange}
                         >
                             {this.state.message}
