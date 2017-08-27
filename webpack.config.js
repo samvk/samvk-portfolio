@@ -92,7 +92,7 @@ module.exports = {
         hot: true,
         inline: true,
         host: '0.0.0.0',
-        port: 8070,
+        port: 8090,
         disableHostCheck: true,
         headers: {
             'Access-Control-Allow-Origin': '*',
