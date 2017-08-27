@@ -18,7 +18,7 @@ export default class Textarea extends React.Component {
 
     static defaultProps = {
         className: '',
-        children: '',
+        children: null,
         disabled: false,
         maxLength: 2000,
         required: false,

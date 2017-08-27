@@ -20,7 +20,7 @@ export default class Input extends React.Component {
 
     static defaultProps = {
         className: '',
-        children: '',
+        children: null,
         disabled: false,
         maxLength: 99,
         required: false,
