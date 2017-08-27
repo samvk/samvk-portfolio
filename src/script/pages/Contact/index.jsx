@@ -43,7 +43,13 @@ export default class Home extends React.Component {
                     <Form
                         onSubmit={() => {
                             const formData = this.state.form;
-                            axios.post('/api/contact.php', formData);
+                            axios.post('/api/contact.php', formData).then(({ data }) => {
+                                console.log(data);
+                                this.setState(() => ({ status: data.message }));
+                            }).catch((err) => {
+                                this.setState(() => ({ status: 'Something went wrong.' }));
+                                console.error(err);
+                            });
                         }}
                     >
                         <Input
