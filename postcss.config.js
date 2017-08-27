@@ -2,7 +2,6 @@ module.exports = {
     parser: 'postcss-comment',
     plugins: {
         'postcss-easy-import': {},
-        'postcss-not-x-child': {},
         'postcss-sassy-mixins': {},
         'postcss-cssnext': {
             browsers: ['last 2 versions', 'ie >= 11'],
