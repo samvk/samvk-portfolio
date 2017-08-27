@@ -107,7 +107,7 @@ $mail->CharSet = "UTF-8";
 try {
 	$mail->AddAddress("samvnkauffman@gmail.com");
 	$mail->SetFrom("noreply@jellyfish.software", "Admin");
-	$mail->Subject = "You've Received a new message from jellyfish.software!";
+	$mail->Subject = "You've received a new message from jellyfish.software!";
 	$mail->IsHTML(true);
 	$mail->Body = $body;
 	$mail->Send();
