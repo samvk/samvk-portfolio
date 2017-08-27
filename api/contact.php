@@ -9,13 +9,11 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
 require "libraries/PHPMailer/class.phpmailer.php";
 
 // data
-$name = trim($_POST["name"]);
-$email = trim($_POST["email"]);
-$phone = trim($_POST["phone"]);
-$message = trim($_POST["message"]);
+$form = json_decode(file_get_contents('php://input'), true);
+$form = array_map('trim', $form);
 
 //  empty fields check (only if bypassed client-side validation)
-if (empty($name) || empty($email) || empty($message)) {
+if (empty($form["name"]) || empty($form["email"]) || empty($form["message"])) {
     http_response_code(400);
     $response = array(
 		"success" => false,
@@ -26,7 +24,7 @@ if (empty($name) || empty($email) || empty($message)) {
 }
 
 // Set email message
-$message = htmlspecialchars($message, ENT_NOQUOTES);
+$message = htmlspecialchars($form["message"], ENT_NOQUOTES);
 $message = nl2br($message); // preserve line breaks
 
 $body = <<<HTML
@@ -88,9 +86,9 @@ $body = <<<HTML
                 <img class='logo' alt="Emma Simon" src="https://avatars0.githubusercontent.com/u/12971446?v=4&s=400" />
             </div>
             <div class='info'>
-                <p><span class='title'>Name</span> {$name}</p>
-                <p><span class='title'>Email</span> {$email}</p>
-                <p><span class='title'>Phone</span> {$phone}</p>
+                <p><span class='title'>Name</span> {$form["name"]}</p>
+                <p><span class='title'>Email</span> {$form["email"]}</p>
+                <p><span class='title'>Phone</span> {$form["phone"]}</p>
             </div>
             <div class='line'></div>
             <p>{$message}</p>
