@@ -94,6 +94,7 @@ export default class Home extends React.Component {
                         >
                             {this.state.status}
                         </Button>
+                        <p styleName='error'>Something went wrong.</p>
                     </Form>
                 </PortfolioCard>
             </article>
