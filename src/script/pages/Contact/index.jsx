@@ -23,10 +23,8 @@ export default class Home extends React.Component {
         },
     }
 
-    handleInputChange = (e) => {
-        const input = e.target;
-        const name = input.name;
-        const value = input.value;
+    handleInputChange = ({ target }) => {
+        const { name, value } = target;
 
         this.setState((state) => ({
             form: {
