@@ -92,16 +92,19 @@ export default class Home extends React.Component {
                         >
                             {this.state.message}
                         </Textarea>
-                        <Button
-                            className='button full-width'
-                            type='submit'
-                            pending={this.state.pending}
-                        >
-                            {this.state.status.success ? this.state.status.message : 'Submit'}
-                        </Button>
-                        <p styleName='error'>
-                            {!this.state.status.success ? this.state.status.message : ''}
-                        </p>
+                        <div className='relative'>
+                            <Button
+                                className='button full-width'
+                                type='submit'
+                                pending={this.state.pending}
+                                disabled={isDisabled}
+                            >
+                                {this.state.status.success ? this.state.status.message : 'Submit'}
+                            </Button>
+                            <p styleName='error'>
+                                {!this.state.status.success ? this.state.status.message : ''}
+                            </p>
+                        </div>
                     </Form>
                 </PortfolioCard>
             </article>

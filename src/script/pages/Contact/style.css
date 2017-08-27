@@ -1,4 +1,5 @@
 .error {
     color: var(--error);
-    transform: translateY(100%);
+    position: absolute;
+    transform: translateY(1em);
 }
