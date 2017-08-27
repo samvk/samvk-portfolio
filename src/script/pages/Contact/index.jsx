@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import classNames from 'classnames';
 
 import pageTitle from 'react-document-title-decorator';
 
@@ -21,7 +22,11 @@ export default class Home extends React.Component {
             phone: '',
             message: '',
         },
-        status: 'Submit',
+        pending: false,
+        status: {
+            success: null,
+            message: '',
+        },
     }
 
     handleInputChange = ({ target }) => {
@@ -43,15 +48,15 @@ export default class Home extends React.Component {
                 >
                     <Form
                         onSubmit={() => {
-                            this.setState(() => ({ status: 'pending' }));
+                            this.setState(() => ({ pending: true }));
 
                             const formData = this.state.form;
                             axios.post('/api/contact.php', formData).then(({ data }) => {
-                                console.log(data);
-                                this.setState(() => ({ status: data.message }));
-                            }).catch((err) => {
-                                this.setState(() => ({ status: 'Something went wrong.' }));
-                                console.error(err);
+                                this.setState(() => ({ status: data }));
+                            }).catch(({ response }) => {
+                                this.setState(() => ({ status: response.data }));
+                            }).then(() => {
+                                this.setState(() => ({ pending: false }));
                             });
                         }}
                     >
@@ -90,11 +95,13 @@ export default class Home extends React.Component {
                         <Button
                             className='button full-width'
                             type='submit'
-                            pending={this.state.status === 'pending'}
+                            pending={this.state.pending}
                         >
-                            {this.state.status}
+                            {this.state.status.success ? this.state.status.message : 'Submit'}
                         </Button>
-                        <p styleName='error'>Something went wrong.</p>
+                        <p styleName='error'>
+                            {!this.state.status.success ? this.state.status.message : ''}
+                        </p>
                     </Form>
                 </PortfolioCard>
             </article>

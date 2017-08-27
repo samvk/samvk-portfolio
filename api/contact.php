@@ -16,8 +16,9 @@ $message = trim($_POST["message"]);
 
 //  empty fields check (only if bypassed client-side validation)
 if (empty($name) || empty($email) || empty($message)) {
-	$response = array(
-		"status" => "error",
+    http_response_code(400);
+    $response = array(
+		"success" => false,
 		"message" => "You left some required fields blank."
 	);
 	echo json_encode($response);
@@ -113,20 +114,24 @@ try {
 
 	// SUCCESS
 	$response = array(
-		"status" => "success",
+		"success" => true,
 		"message" => "Sent!"
 	);
 
 	// ERROR
 } catch (phpmailerException $e) {
+    http_response_code(400);
 	$response = array(
-		"status" => "error",
-		"message" =>  "PHPMailer error: " . $e->errorMessage() // PHPMailer error
+		"success" => false,
+		"message" =>  "Failed to send message."
 	);
+    error_log($e);
 } catch (Exception $e) {
+    http_response_code(400);
 	$response = array(
-		"status" => "error",
-		"message" => "Error: " . $e->getMessage()
+		"success" => false,
+		"message" => "Something went wrong."
 	);
+    error_log($e);
 }
 echo json_encode($response);
