@@ -20,7 +20,7 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 @connect(mapStateToProps, mapDispatchToProps)
-// @CSSModules(styles, { allowMultiple: true, errorWhenNotFound: false })
+// @CSSModules(styles, { allowMultiple: true })
 export default class CHANGEME extends React.Component {
     static propTypes = {
         className: PropTypes.string,

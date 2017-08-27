@@ -7,7 +7,7 @@ import classNames from 'classnames';
 
 import CHANGEME from 'components/CHANGEME';
 
-// @CSSModules(styles, { allowMultiple: true, errorWhenNotFound: false })
+// @CSSModules(styles, { allowMultiple: true })
 export default class CHANGEME extends React.Component {
     static propTypes = {
         className: PropTypes.string,

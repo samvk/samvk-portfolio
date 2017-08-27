@@ -12,7 +12,7 @@ import ResumeCard from './components/ResumeCard';
 import ResumeEntry from './components/ResumeEntry';
 
 @pageTitle('Resume')
-// @CSSModules(styles, { allowMultiple: true, errorWhenNotFound: false })
+// @CSSModules(styles, { allowMultiple: true })
 export default class Home extends React.Component {
     render() {
         return (
