@@ -12,12 +12,10 @@
   "dependencies": {
     "axios": "^0.16.2",
     "classnames": "^2.2.5",
-    "postcss-not-x-child": "^1.0.0",
     "prop-types": "https://registry.npmjs.org/prop-types/-/prop-types-15.5.9.tgz",
     "react": "^15.5.4",
     "react-css-modules": "^4.3.0",
     "react-dom": "^15.5.4",
-    "react-icons": "^2.2.5",
     "react-router-dom": "^4.1.1"
   },
   "devDependencies": {
