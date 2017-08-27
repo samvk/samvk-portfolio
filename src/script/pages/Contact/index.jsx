@@ -21,6 +21,7 @@ export default class Home extends React.Component {
             phone: '',
             message: '',
         },
+        status: 'Submit',
     }
 
     handleInputChange = ({ target }) => {
@@ -88,7 +89,7 @@ export default class Home extends React.Component {
                             className='button full-width'
                             type='submit'
                         >
-                            Submit
+                            {this.state.status}
                         </button>
                     </Form>
                 </PortfolioCard>
