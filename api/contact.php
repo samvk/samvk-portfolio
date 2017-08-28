@@ -103,7 +103,7 @@ $mail = new PHPMailer(true);
 $mail->CharSet = "UTF-8";
 
 try {
-	$mail->AddAddress("samvnkauffman@gmail.com");
+	$mail->AddAddress("emmamaysimon@gmail.com");
 	$mail->SetFrom("noreply@jellyfish.software", "Admin");
 	$mail->Subject = "You've received a new message from jellyfish.software!";
 	$mail->IsHTML(true);
