@@ -34,7 +34,7 @@ $body = <<<HTML
 
 		<style>
             .body {
-                width: 480px;
+                width: 320px;
                 max-width: calc(100% - 140px);
                 padding: 50px 35px 25px;
                 font-size: 16px;
