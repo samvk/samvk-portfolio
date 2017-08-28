@@ -15,10 +15,10 @@ $form = array_map('trim', $form);
 //  empty fields check (only if bypassed client-side validation)
 if (empty($form["name"]) || empty($form["email"]) || empty($form["message"])) {
     http_response_code(400);
-    $response = array(
+    $response = [
 		"success" => false,
 		"message" => "You left some required fields blank."
-	);
+	];
 	echo json_encode($response);
 	exit;
 }
@@ -111,25 +111,25 @@ try {
 	$mail->Send();
 
 	// SUCCESS
-	$response = array(
+	$response = [
 		"success" => true,
 		"message" => "Sent!"
-	);
+	];
 
 	// ERROR
 } catch (phpmailerException $e) {
     http_response_code(400);
-	$response = array(
+	$response = [
 		"success" => false,
 		"message" =>  "Failed to send message."
-	);
+	];
     error_log($e);
 } catch (Exception $e) {
     http_response_code(400);
-	$response = array(
+	$response = [
 		"success" => false,
 		"message" => "Something went wrong."
-	);
+	];
     error_log($e);
 }
 echo json_encode($response);
