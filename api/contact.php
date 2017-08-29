@@ -8,9 +8,14 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
 
 require "libraries/PHPMailer/class.phpmailer.php";
 
+// gets file contents as trimmed array
+function json_get_contents($file) {
+    $data = json_decode(file_get_contents($file), true);
+    return array_map('trim', $data);
+}
+
 // data
-$form = json_decode(file_get_contents('php://input'), true);
-$form = array_map('trim', $form);
+$form = json_get_contents('php://input');
 
 //  empty fields check (only if bypassed client-side validation)
 if (empty($form["name"]) || empty($form["email"]) || empty($form["message"])) {
