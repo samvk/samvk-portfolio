@@ -33,8 +33,8 @@ export default class Footer extends React.Component {
                         <Flex xBetween yCenter styleName='content'>
                             <Link
                                 external
-                                to='mailto:emmamaysimon@gmail.com'
-                                title='EmmaMaySimon@gmail.com'
+                                to='mailto:hello@samvk.com'
+                                title='hello@samvk.com'
                             >
                                 <span
                                     className='fa fa-fw fa-envelope'
@@ -51,7 +51,7 @@ export default class Footer extends React.Component {
                             </div>
                             <Link
                                 external
-                                to='https://linkedin.com/in/emma-simon/'
+                                to='https://linkedin.com/in/samvk/'
                                 title='LinkedIn'
                             >
                                 <span
@@ -61,7 +61,7 @@ export default class Footer extends React.Component {
                             </Link>
                         </Flex>
                     </Flex>
-                    <div styleName='copyright'>2017 &copy; Emma Simon</div>
+                    <div styleName='copyright'>2017 &copy; SamVK</div>
                 </div>
             </footer>
         );

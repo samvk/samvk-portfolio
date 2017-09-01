@@ -88,7 +88,7 @@ $body = <<<HTML
 	<body>
         <div class='body'>
             <div class='text-center'>
-                <img class='logo' alt="Emma Simon" src="https://avatars0.githubusercontent.com/u/12971446?v=4&s=400" />
+                <img class='logo' alt="SamVK" src="https://samvk.com/img/headshot.jpg" />
             </div>
             <div class='info'>
                 <p><span class='title'>Name</span> {$form["name"]}</p>
@@ -97,7 +97,7 @@ $body = <<<HTML
             </div>
             <div class='line'></div>
             <p>{$message}</p>
-            <p class='copyright text-center'>2017 &copy; Emma Simon</p>
+            <p class='copyright text-center'>2017 &copy; SamVK</p>
         </div>
 	</body>
 </html>
