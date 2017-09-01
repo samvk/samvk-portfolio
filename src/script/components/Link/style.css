@@ -4,11 +4,11 @@
 }
 
 .text {
-    color: var(--purple);
-    @include hover(var(--purple-light));
+    color: var(--theme);
+    @include hover(var(--theme-light));
 }
 
 :global(.active-link) {
-    color: var(--purple);
-    @include hover(var(--purple));
+    color: var(--theme);
+    @include hover(var(--theme));
 }

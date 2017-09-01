@@ -28,7 +28,7 @@
 }
 
 .field:focus + .title {
-    color: var(--purple);
+    color: var(--theme);
 }
 
 // display title above when placeholder not shown

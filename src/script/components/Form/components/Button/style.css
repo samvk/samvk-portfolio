@@ -1,12 +1,12 @@
 .button {
     cursor: pointer;
-    color: white var(--purple-light);
+    color: white var(--theme-light);
     padding: 1em 2em;
     border-radius: 3px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 
-    @include hover(null, var(--purple));
-    @include active(null, var(--purple-dark)) {
+    @include hover(null, var(--theme));
+    @include active(null, var(--theme-dark)) {
         transition: none;
     }
     &:focus {

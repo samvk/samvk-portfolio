@@ -28,6 +28,6 @@
 
         border-left: 0.1em solid transparent;
         border-right: 0.1em solid transparent;
-        border-top: 0.3em solid var(--purple);
+        border-top: 0.3em solid var(--theme);
     }
 }
