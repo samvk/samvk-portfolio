@@ -35,7 +35,7 @@ $message = nl2br($message); // preserve line breaks
 $body = <<<HTML
 <html>
 	<head>
-		<title>Emma Simon - Message</title>
+		<title>SamVK - Message</title>
 
 		<style>
             .body {
@@ -108,9 +108,9 @@ $mail = new PHPMailer(true);
 $mail->CharSet = "UTF-8";
 
 try {
-	$mail->AddAddress("emmamaysimon@gmail.com");
-	$mail->SetFrom("noreply@jellyfish.software", "Admin");
-	$mail->Subject = "You've received a new message from jellyfish.software!";
+	$mail->AddAddress("hello@samvk.com");
+	$mail->SetFrom("noreply@samvk.com", "Admin");
+	$mail->Subject = "You've received a new message from SamVK!";
 	$mail->IsHTML(true);
 	$mail->Body = $body;
 	$mail->Send();
