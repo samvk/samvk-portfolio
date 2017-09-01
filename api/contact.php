@@ -45,10 +45,10 @@ $body = <<<HTML
                 font-size: 16px;
                 color: #575757;
                 background-color: #F8F8F8;
-                border-top: 65px solid #61006A;
-                border-bottom: 65px solid #61006A;
-                border-left: 35px solid #61006A;
-                border-right: 35px solid #61006A;
+                border-top: 65px solid #EC412C;
+                border-bottom: 65px solid #EC412C;
+                border-left: 35px solid #EC412C;
+                border-right: 35px solid #EC412C;
 
             }
             .text-center {
@@ -75,7 +75,7 @@ $body = <<<HTML
 			.line {
 				border-left: 4px solid transparent;
 				border-right: 4px solid transparent;
-				border-top: 4px solid #8B008B;
+				border-top: 4px solid #EF6250;
 				height: 0;
 			}
             .copyright {
