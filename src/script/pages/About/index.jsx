@@ -5,7 +5,7 @@ import pageTitle from 'react-document-title-decorator';
 import CSSModules from 'react-css-modules';
 import styles from './style.css';
 
-import { Button } from 'components/Form';
+import Button from 'components/Button';
 import Flex from 'components/Flex';
 import Image from 'components/Image';
 import Link from 'components/Link';
