@@ -8,3 +8,20 @@
         height: height(src/img/headshot.png, 2);
     }
 }
+
+.button-wrapper {
+    margin-top: 3em;
+}
+
+.button {
+    &::after {
+        font-awesome: chevron-right;
+        display: inline-block;
+        transform: translateX(em(10px));
+        transition: transform 150ms linear;
+    }
+
+    &:hover::after {
+        transform: translateX(em(13px));
+    }
+}

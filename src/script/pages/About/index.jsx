@@ -5,6 +5,8 @@ import pageTitle from 'react-document-title-decorator';
 import CSSModules from 'react-css-modules';
 import styles from './style.css';
 
+import { Button } from 'components/Form';
+import Flex from 'components/Flex';
 import Image from 'components/Image';
 import Link from 'components/Link';
 import PortfolioCard from 'components/PortfolioCard';
@@ -45,6 +47,12 @@ export default class About extends React.Component {
                             </Link> to see my past experience.
                         </p>
                     </div>
+                    <Flex
+                        xCenter
+                        styleName='button-wrapper'
+                    >
+                        <Button styleName='button'>View my projects</Button>
+                    </Flex>
                 </PortfolioCard>
             </article>
         );
