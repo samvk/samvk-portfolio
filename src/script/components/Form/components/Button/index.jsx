@@ -11,6 +11,7 @@ export default class Button extends React.Component {
         className: PropTypes.string,
         children: PropTypes.node,
         disabled: PropTypes.bool,
+        link: PropTypes.bool,
         pending: PropTypes.bool,
     }
 
@@ -18,12 +19,13 @@ export default class Button extends React.Component {
         className: '',
         children: null,
         disabled: false,
+        link: false,
         pending: false,
     }
 
 
     render() {
-        const { className, children, disabled, pending, ...props } = this.props;
+        const { className, children, disabled, link, pending, ...props } = this.props;
 
         const isDisabled = disabled || pending;
 
@@ -38,7 +40,7 @@ export default class Button extends React.Component {
         return (
             <button
                 className={classNames(className, 'button')}
-                styleName={classNames('button', { disabled: isDisabled })}
+                styleName={classNames('button', { disabled: isDisabled }, { link })}
                 disabled={isDisabled}
                 {...props}
             >

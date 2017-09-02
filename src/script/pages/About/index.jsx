@@ -51,7 +51,7 @@ export default class About extends React.Component {
                         xCenter
                         styleName='button-wrapper'
                     >
-                        <Button styleName='button'>View my projects</Button>
+                        <Button link>View my projects</Button>
                     </Flex>
                 </PortfolioCard>
             </article>
