@@ -1,32 +1,39 @@
 import React from 'react';
 
-const siteTitle = document.title;
+// use title defined in HMTL head as the site name
+const siteName = document.title;
 
-const pageTitle = (getTitle) => (WrappedComponent) => class extends React.Component {
-    updateTitle = (props) => {
-        let title;
-        if (typeof getTitle === 'function') {
-            title = getTitle(props);
-        } else {
-            title = getTitle;
+const pageTitle = (title, delimiter, reverse = false) => ((PageComponent) => (
+    class extends React.Component {
+        updateTitle = (props) => {
+            if (typeof title === 'function') {
+                // build title with page component's props
+                title = title(props);
+            }
+            if (typeof title !== 'string') {
+                throw new TypeError('pageTitle must be passed a string or function returning a string.');
+            }
+
+            // default ' | ' delimiter (not declared as default param to allow other falsy args)
+            delimiter = (typeof delimiter !== 'string') ? ' | ' : delimiter;
+
+            // reversable title order
+            const [primaryTitle, secondaryTitle] = reverse ? [siteName, title] : [title, siteName];
+
+            document.title = primaryTitle + delimiter + secondaryTitle;
         }
-        if (typeof title !== 'string') {
-            return console.error('pageTitle must be passed a string or function returning a string.');
+
+        componentDidMount() {
+            this.updateTitle(this.props);
         }
-        document.title = `${title} | ${siteTitle}`;
-    }
 
-    componentDidMount() {
-        this.updateTitle(this.props);
-    }
+        componentWillReceiveProps(props) {
+            this.updateTitle(props);
+        }
 
-    componentWillReceiveProps(props) {
-        this.updateTitle(props);
-    }
-
-    render() {
-        return <WrappedComponent {...this.props} />;
-    }
-    };
+        render() {
+            return <PageComponent {...this.props} />;
+        }
+}));
 
 export default pageTitle;
