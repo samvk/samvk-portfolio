@@ -38,9 +38,8 @@ export default class About extends React.Component {
                             >
                                 take a look at my resume
                             </Link> or you can <Link
-                                external
                                 text
-                                to='https://linkedin.com/in/samvk'
+                                href='https://linkedin.com/in/samvk'
                             >
                                 connect with me on LinkedIn
                             </Link> to see my past experience.

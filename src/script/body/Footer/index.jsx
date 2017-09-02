@@ -32,8 +32,7 @@ export default class Footer extends React.Component {
                     <Flex xCenter>
                         <Flex xBetween yCenter styleName='content'>
                             <Link
-                                external
-                                to='mailto:hello@samvk.com'
+                                href='mailto:hello@samvk.com'
                                 title='hello@samvk.com'
                             >
                                 <span
@@ -50,8 +49,7 @@ export default class Footer extends React.Component {
                                 </h6>
                             </div>
                             <Link
-                                external
-                                to='https://linkedin.com/in/samvk/'
+                                href='https://linkedin.com/in/samvk/'
                                 title='LinkedIn'
                             >
                                 <span
