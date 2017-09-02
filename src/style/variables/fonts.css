@@ -9,8 +9,9 @@
     --fs-base: 16px;
 
     // Font Family
-    --ff-primary: 'Playfair Display', system-ui;
+    --ff-primary: 'Lato', system-ui;
     --ff-secondary: 'Lato', system-ui;
+    --ff-logo: 'Montserrat', system-ui;
 
     // Font Weights
     --lighter: 100;
