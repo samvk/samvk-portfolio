@@ -1,6 +1,10 @@
 .headshot {
     border: rem(5px) solid var(--gray-lightest);
-    size: 360px;
+    width: 360px;
     border-radius: 50%;
     margin-top: 1rem;
+
+    @media (--sm-min) {
+        height: 360px;
+    }
 }
