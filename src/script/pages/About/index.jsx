@@ -26,7 +26,7 @@ export default class About extends React.Component {
                     }
                 >
                     <div>
-                        <h1 className='text-center'>Hi, I'm Sam.</h1>
+                        <h1>Hi, I'm Sam.</h1>
                         <p>
                             I'm a web developer who likes figuring out how things work. I have the most experience with <span className='loud'>Python</span>, <span className='loud'>JavaScript</span>, and <span className='loud'>HTML/CSS</span>, and recently I've started using <span className='loud'>React</span> & <span className='loud'>Redux</span>. Usually it's more fun for me to do logic and backend stuff. But I enjoy making things look pretty too!
                         </p>

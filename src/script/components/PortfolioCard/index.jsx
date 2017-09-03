@@ -29,12 +29,7 @@ export default class PortfolioCard extends React.Component {
                 className={classNames(className)}
                 {...props}
             >
-                <h1
-                    className='text-center'
-                    styleName='title'
-                >
-                    {title}
-                </h1>
+                <h1 styleName='title'>{title}</h1>
                 {children}
             </section>
         );
