@@ -12,15 +12,16 @@ import Image from 'components/Image';
 export default class FourOhFour extends React.Component {
     render() {
         return (
-            <Flex column yCenter>
-                <h1
-                    styleName='header'
-                    title='404 — Page Not Found'
-                >
-                    4<Image src='logo.png' />4
+            <article title='Unless you were looking for a 404 page — in which case, you found it!'>
+                <Flex column yCenter>
+                    <h1
+                        styleName='header'
+                    >
+                    404
                 </h1>
-                <p className='h1'>Page not found.</p>
-            </Flex>
+                    <p className='h1'>Page not found.</p>
+                </Flex>
+            </article>
         );
     }
 }
