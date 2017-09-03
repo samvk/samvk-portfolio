@@ -35,27 +35,33 @@ export default class Header extends React.Component {
                                     exact
                                     activeClassName='active-link'
                                     to='/'
-                                >About</Link>
+                                >
+                                    About
+                                </Link>
                             </li>
                             <li styleName='navlink'>
                                 <Link
                                     activeClassName='active-link'
                                     to='/resume'
-                                >Resume</Link>
+                                >
+                                    Resume
+                                </Link>
                             </li>
                             <li styleName='navlink'>
                                 <Link
                                     activeClassName='active-link'
                                     to='/contact'
-                                >Contact</Link>
+                                >
+                                    Contact
+                                </Link>
                             </li>
                             <li styleName='navlink'>
                                 <Link
                                     href='https://github.com/samvk'
                                     className='external-link'
                                 >
-                                GitHub
-                            </Link>
+                                    GitHub
+                                </Link>
                             </li>
                         </ul>
                     </Flex>
