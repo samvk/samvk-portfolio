@@ -42,9 +42,9 @@ export default class Header extends React.Component {
                             <li styleName='navlink'>
                                 <Link
                                     activeClassName='active-link'
-                                    to='/resume'
+                                    to='/projects'
                                 >
-                                    Resume
+                                    Projects
                                 </Link>
                             </li>
                             <li styleName='navlink'>
