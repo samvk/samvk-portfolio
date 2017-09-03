@@ -44,9 +44,6 @@ export default class Footer extends React.Component {
                                 <h6 styleName='message' title='React'>
                             Powered by&nbsp;<Image styleName='icon' src='react.png' />
                                 </h6>
-                                <h6 styleName='message' title='Raspberry Pi'>
-                            Hosted on my&nbsp;<Image styleName='icon' src='raspberry.png' /><Image styleName='icon' src='pie.png' />
-                                </h6>
                             </div>
                             <Link
                                 href='https://linkedin.com/in/samvk/'
