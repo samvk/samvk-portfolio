@@ -31,20 +31,25 @@ export default class About extends React.Component {
                             I'm a web developer who likes figuring out how things work. I have the most experience with <span className='loud'>Python</span>, <span className='loud'>JavaScript</span>, and <span className='loud'>HTML/CSS</span>, and recently I've started using <span className='loud'>React</span> & <span className='loud'>Redux</span>. Usually it's more fun for me to do logic and backend stuff. But I enjoy making things look pretty too!
                         </p>
                         <p>
-                            When I'm not working, I like playing video games, climbing mountains, and eating food.
+                            On a personal note: I love metal detecting, watching movies, the theatre, and building things.
                         </p>
                         <p>
-                            Feel free to <Link
+                            You can <Link
+                                text
+                                href='https://github.com/samvk'
+                            >
+                                check me out on GitHub
+                            </Link>, <Link
+                                text
+                                href='https://linkedin.com/in/samvk'
+                            >
+                                find me on LinkedIn
+                            </Link>, <Link
                                 text
                                 to='/resume'
                             >
                                 take a look at my resume
-                            </Link> or you can <Link
-                                text
-                                href='https://linkedin.com/in/samvk'
-                            >
-                                connect with me on LinkedIn
-                            </Link> to see my past experience.
+                            </Link>, or view some of my projects.
                         </p>
                     </div>
                     <Flex
