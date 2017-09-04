@@ -13,7 +13,7 @@
         }
 
         .logo {
-            size: 6rem;
+            size: width(src/img/logo.png, 2) height(src/img/logo.png, 2);
             z-index: 1; // icon in front of text
             transform: translateY(em(2.5px));
         }
