@@ -8,11 +8,6 @@
     width: 375px;
 }
 
-.footer .logo {
-    font-size: 1.75rem;
-}
-
-
 .message {
     display: flex;
     justify-content: center;

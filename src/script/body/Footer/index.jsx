@@ -5,9 +5,10 @@ import classNames from 'classnames';
 import CSSModules from 'react-css-modules';
 import styles from './style.css';
 
+import Logo from './components/Logo';
+
 import Flex from 'components/Flex';
 import Image from 'components/Image';
-import Link from 'components/Link';
 
 @CSSModules(styles)
 export default class Footer extends React.Component {
@@ -31,29 +32,21 @@ export default class Footer extends React.Component {
                 <div className='relative'>
                     <Flex xCenter>
                         <Flex xBetween yCenter styleName='content'>
-                            <Link
-                                href='mailto:hello@samvk.com'
+                            <Logo
+                                logo='envelope'
                                 title='hello@samvk.com'
-                            >
-                                <span
-                                    className='fa fa-fw fa-envelope'
-                                    styleName='logo'
-                                />
-                            </Link>
+                                href='mailto:hello@samvk.com'
+                            />
                             <div>
                                 <h6 styleName='message'>
-                            Powered by&nbsp;<Image styleName='icon' src='react.png' title='React' />
+                                    Powered by&nbsp;<Image styleName='icon' src='react.png' title='React' />
                                 </h6>
                             </div>
-                            <Link
+                            <Logo
+                                logo='linkedin'
                                 href='https://linkedin.com/in/samvk/'
                                 title='LinkedIn'
-                            >
-                                <span
-                                    className='fa fa-fw fa-linkedin'
-                                    styleName='logo'
-                                />
-                            </Link>
+                            />
                         </Flex>
                     </Flex>
                     <div styleName='copyright'>2017 &copy; SamVK</div>
