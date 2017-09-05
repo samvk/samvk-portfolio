@@ -33,9 +33,14 @@ export default class Footer extends React.Component {
                     <Flex xCenter>
                         <Flex xBetween yCenter styleName='content'>
                             <Logo
-                                logo='envelope'
-                                title='hello@samvk.com'
-                                href='mailto:hello@samvk.com'
+                                logo='github'
+                                href='https://github.com/samvk'
+                                title='GitHub'
+                            />
+                            <Logo
+                                logo='linkedin'
+                                href='https://linkedin.com/in/samvk/'
+                                title='LinkedIn'
                             />
                             <div>
                                 <h6 styleName='message'>
@@ -43,9 +48,14 @@ export default class Footer extends React.Component {
                                 </h6>
                             </div>
                             <Logo
-                                logo='linkedin'
-                                href='https://linkedin.com/in/samvk/'
-                                title='LinkedIn'
+                                logo='file-text-o'
+                                to='/resume'
+                                title='Resume'
+                            />
+                            <Logo
+                                logo='envelope'
+                                href='mailto:hello@samvk.com'
+                                title='hello@samvk.com'
                             />
                         </Flex>
                     </Flex>

@@ -26,7 +26,7 @@ export default class Logo extends React.Component {
                 className={classNames(className)}
                 {...props}
             >
-                <span className={`fs-1 fa fa-fw fa-${logo}`} />
+                <span className={`fs-2 fa fa-fw fa-${logo}`} />
             </Link>
         );
     }
