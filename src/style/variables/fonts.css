@@ -21,10 +21,6 @@
     --bold: 700;
     --bolder: 900;
 
-    // Font Size
-    // FIXME: 6 Why does this variable need to be (re)defined in this file?
-    $md-min: 768px;
-
     // Font size props (for static font sizes)
     --fs-3: em(22px);
     --fs-4: em(17.5px);

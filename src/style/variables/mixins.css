@@ -21,21 +21,15 @@
 
 // media queries breakpoints
 // Note: also defined in 'store/reducers'
-$sm-min: 576px;
-$md-min: 768px; // Note: also defined in `variables/fonts.css`
-$lg-min: 992px;
+$sm-min: 576;
+$md-min: 768;
+$lg-min: 992;
+$xl-min: 1200;
 
-$xs-max: ($sm-min - 1);
-$sm-max: ($md-min - 1);
-$md-max: ($lg-min - 1);
-
-@custom-media --sm-min (min-width: $sm-min);
-@custom-media --md-min (min-width: $md-min);
-@custom-media --lg-min (min-width: $lg-min);
-
-@custom-media --xs-max (max-width: $xs-max);
-@custom-media --sm-max (max-width: $sm-max);
-@custom-media --md-max (max-width: $md-max);
+@custom-media --sm-min (min-width: $(sm-min)px);
+@custom-media --md-min (min-width: $(md-min)px);
+@custom-media --lg-min (min-width: $(lg-min)px);
+@custom-media --xl-min (min-width: $(xl-min)px);
 
 :root {
     --color-transition: {
