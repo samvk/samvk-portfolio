@@ -16,7 +16,7 @@ import PortfolioCard from 'components/PortfolioCard';
 export default class About extends React.Component {
     render() {
         return (
-            <article>
+            <article className='page'>
                 <PortfolioCard
                     title={
                         <Image

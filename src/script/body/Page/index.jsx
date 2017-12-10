@@ -10,16 +10,12 @@ import FourOhFour from 'pages/FourOhFour';
 export default class Page extends React.Component {
     render() {
         return (
-            <div
-                className='page'
-            >
-                <Switch>
-                    <Route exact path='/' component={About} />
-                    <Route exact path='/projects' component={Projects} />
-                    <Route exact path='/contact' component={Contact} />
-                    <Route component={FourOhFour} />
-                </Switch>
-            </div>
+            <Switch>
+                <Route exact path='/' component={About} />
+                <Route exact path='/projects' component={Projects} />
+                <Route exact path='/contact' component={Contact} />
+                <Route component={FourOhFour} />
+            </Switch>
         );
     }
 }

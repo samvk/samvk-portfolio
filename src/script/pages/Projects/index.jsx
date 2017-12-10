@@ -13,7 +13,7 @@ import PortfolioCard from 'components/PortfolioCard';
 export default class Home extends React.Component {
     render() {
         return (
-            <article>
+            <article className='page xl'>
                 <PortfolioCard
                     title='Projects'
                 >

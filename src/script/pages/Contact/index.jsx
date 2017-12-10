@@ -46,7 +46,7 @@ export default class Home extends React.Component {
         const isDisabled = this.state.pending || this.state.status.success;
 
         return (
-            <article>
+            <article className='page'>
                 <PortfolioCard
                     title='Contact'
                 >

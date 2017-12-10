@@ -2,10 +2,10 @@
 // CONTAINER
 // ==================================================================//
 
-// add `page-xl` class for extra-wide container
+// add `xl` class for extra-wide container
 
 // container
-.container > article {
+.container {
     position: relative;
     padding: * 15px;
     max-width: 100%;
@@ -22,7 +22,7 @@
         @media (--lg-min) {
             width: 960px;
         }
-        &.page-xl {
+        &.xl {
             @media (--xl-min) {
                 width: 1140px;
             }

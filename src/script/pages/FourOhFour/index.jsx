@@ -12,7 +12,10 @@ import Image from 'components/Image';
 export default class FourOhFour extends React.Component {
     render() {
         return (
-            <article title='Unless you were looking for a 404 page — in which case, you found it!'>
+            <article
+                className='page'
+                title='Unless you were looking for a 404 page — in which case, you found it!'
+            >
                 <Flex column yCenter>
                     <h1
                         styleName='header'
