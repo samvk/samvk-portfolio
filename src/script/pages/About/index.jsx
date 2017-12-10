@@ -28,7 +28,10 @@ export default class About extends React.Component {
                     <div>
                         <h1>Hi, I'm Sam.</h1>
                         <p>
-                            I'm a web developer who likes figuring out how things work. I have the most experience with <span className='loud'>Python</span>, <span className='loud'>JavaScript</span>, and <span className='loud'>HTML/CSS</span>, and recently I've started using <span className='loud'>React</span> & <span className='loud'>Redux</span>. Usually it's more fun for me to do logic and backend stuff. But I enjoy making things look pretty too!
+                            I'm a web developer who loves building apps and bringing designs to life. I have the most experience with <strong>Python</strong>, <strong>JavaScript</strong>, and <strong>HTML/CSS</strong>, and recently I've started using <strong>React</strong> & <strong>Redux</strong>. Usually it's more fun for me to do logic and backend stuff. But I enjoy making things look pretty too!
+                        </p>
+                        <p>
+                            Currently, I work as a Software Engineer at <em>Konica Minolta Business Solutions</em>.
                         </p>
                         <p>
                             On a personal note: I love metal detecting, watching movies, the theatre, and building things.
@@ -49,7 +52,7 @@ export default class About extends React.Component {
                                 to='/resume'
                             >
                                 take a look at my resume
-                            </Link>, or view some of my projects.
+                            </Link>, or continue to view some of my projects.
                         </p>
                     </div>
                     <Flex
