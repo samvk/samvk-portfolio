@@ -36,10 +36,6 @@ p {
 // accenting
 ::selection { color: white color(var(--theme-light) alpha(67%)); }
 
-.loud {
-    font-weight: var(--bold);
-}
-
 // link
 .external-link::after {
     font-awesome: external-link;
