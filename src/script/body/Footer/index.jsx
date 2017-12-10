@@ -5,8 +5,8 @@ import classNames from 'classnames';
 import CSSModules from 'react-css-modules';
 import styles from './style.css';
 
-import Logo from './components/Logo';
 
+import Logo from 'components/Logo';
 import Flex from 'components/Flex';
 import Image from 'components/Image';
 
