@@ -39,7 +39,7 @@ export default class Footer extends React.Component {
                             />
                             <Logo
                                 logo='linkedin'
-                                href='https://linkedin.com/in/samvk/'
+                                href='https://linkedin.com/in/samvk'
                                 title='LinkedIn'
                             />
                             <div>
