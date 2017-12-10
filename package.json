@@ -1,14 +1,14 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "A software developer living in Northampton, Massachusetts.",
+  "description": "I am a web developer based in Hartford, CT.",
   "main": "script.jsx",
   "scripts": {
     "build:prod": "env NODE_ENV=production webpack -p",
     "watch": "webpack -p --watch",
     "watch:dev": "webpack-dev-server --public --progress"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.16.2",
     "classnames": "^2.2.5",
