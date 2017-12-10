@@ -116,7 +116,7 @@ $xl-min: 1200;
     position: absolute;
 
     // animation
-    transition: opacity $duration $ease, visibility 0ms $duration;
+    transition: filter $duration $ease, visibility 0ms $duration;
 
     &.fade-in {
         // design

@@ -37,7 +37,7 @@
             font-weight: var(--bold);
             transform: translateX(-108%);
             filter: opacity(0%);
-            transition: transform 500ms ease, opacity 500ms ease;
+            transition: transform 500ms ease, filter 500ms ease;
         }
 
         @media (--sm-min) {

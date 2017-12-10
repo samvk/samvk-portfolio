@@ -20,7 +20,7 @@
     top: 0;
     filter: opacity(0%);
 
-    transition: opacity 500ms, transform 500ms;
+    transition: filter 500ms, transform 500ms;
 }
 
 .disabled {
