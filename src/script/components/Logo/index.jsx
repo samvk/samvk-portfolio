@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
 
 // import CSSModules from 'react-css-modules';
 // import styles from './style.css';
@@ -21,13 +20,13 @@ export default class Logo extends React.Component {
 
     render() {
         const { className, logo, ...props } = this.props;
-        return (
-            <Link
-                className={classNames(className)}
-                {...props}
-            >
-                <span className={`fs-2 fa fa-fw fa-${logo}`} />
-            </Link>
-        );
+
+        const logoNode = (<span className={`${className} fs-2 fa fa-fw fa-${logo}`} />);
+
+        if (!(props.to || props.href)) {
+            return logoNode;
+        }
+
+        return (<Link {...props}>{logoNode}</Link>);
     }
 }
