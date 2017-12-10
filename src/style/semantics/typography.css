@@ -5,7 +5,7 @@
 // accents
 .underline { text-decoration: underline; }
 .italic { font-style: italic; }
-.bold { font-weight: var(--semi-bold); }
+.bold { font-weight: var(--bold); }
 
 // text-align
 .text-center { text-align: center; }
