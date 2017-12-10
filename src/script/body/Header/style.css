@@ -36,7 +36,7 @@
             font-family: var(--ff-logo);
             font-weight: var(--bold);
             transform: translateX(-108%);
-            opacity: 0;
+            filter: opacity(0%);
             transition: transform 500ms ease, opacity 500ms ease;
         }
 
@@ -48,7 +48,7 @@
 
                 .title-text {
                     transform: none;
-                    opacity: 1;
+                    filter: opacity(100%);
                 }
             }
         }
