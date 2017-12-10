@@ -28,7 +28,7 @@ export default class About extends React.Component {
                     <div>
                         <h1>Hi, I'm Sam.</h1>
                         <p>
-                            I'm a web developer who loves building apps and bringing designs to life. I have the most experience with <strong>Python</strong>, <strong>JavaScript</strong>, and <strong>HTML/CSS</strong>, and recently I've started using <strong>React</strong> & <strong>Redux</strong>. Usually it's more fun for me to do logic and backend stuff. But I enjoy making things look pretty too!
+                            I'm a web developer who loves building apps and bringing designs to life. My go-to technologies right now include <strong>HTML5</strong>, <strong>CSS3</strong>, and <strong>JavaScript(ES8+)</strong>—amped with the help of <strong>React</strong> & <strong>Redux</strong> and <strong>Sass</strong> & <strong>PostCSS</strong>. Previously, I've also worked with jQuery, PHP, and MySQL.
                         </p>
                         <p>
                             Currently, I work as a Software Engineer at <em>Konica Minolta Business Solutions</em>.
