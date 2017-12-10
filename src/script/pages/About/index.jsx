@@ -49,7 +49,7 @@ export default class About extends React.Component {
                                 find me on LinkedIn
                             </Link>, <Link
                                 text
-                                to='/resume'
+                                href='/src/docs/SamKauffman_Resume.pdf'
                             >
                                 take a look at my resume
                             </Link>, or continue to view some of my projects.
