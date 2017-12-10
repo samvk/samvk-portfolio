@@ -1,0 +1,9 @@
+$gutter: 15px;
+
+.grid {
+    margin: * -$gutter;
+
+    & > div {
+        padding: * $gutter;
+    }
+}
