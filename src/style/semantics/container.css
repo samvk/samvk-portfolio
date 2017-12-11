@@ -24,7 +24,7 @@
         }
         &.xl {
             @media (--xl-min) {
-                width: 1140px;
+                width: 1170px;
             }
         }
     }
