@@ -35,11 +35,3 @@ p {
 
 // accenting
 ::selection { color: white color(var(--theme-light) alpha(67%)); }
-
-// link
-.external-icon::after {
-    font-awesome: external-link;
-    font-size: 0.75em;
-    vertical-align: text-top;
-    padding-left: 0.25em;
-}

@@ -10,13 +10,11 @@ import styles from './style.css';
 export default class Link extends React.Component {
     static propTypes = {
         children: PropTypes.node.isRequired,
-        className: PropTypes.string,
         externalIcon: PropTypes.bool,
         text: PropTypes.bool,
     }
 
     static defaultProps = {
-        className: '',
         externalIcon: false,
         text: false,
     }
@@ -25,7 +23,6 @@ export default class Link extends React.Component {
     render() {
         let {
             children,
-            className,
             externalIcon,
             text,
             ...props
@@ -33,8 +30,7 @@ export default class Link extends React.Component {
 
         // only style like text link is specified
         props = {
-            className: classNames(className, { 'external-icon': externalIcon }),
-            styleName: classNames('link', { text }),
+            styleName: classNames('link', { text }, { 'external-icon': externalIcon }),
             ...props,
         };
 

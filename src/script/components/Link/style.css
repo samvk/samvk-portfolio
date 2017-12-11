@@ -8,6 +8,13 @@
     @include hover(var(--theme-light));
 }
 
+.external-icon::after {
+    font-awesome: external-link;
+    font-size: 0.75em;
+    vertical-align: text-top;
+    padding-left: 0.25em;
+}
+
 :global(.active-link) {
     color: var(--theme);
     @include hover(var(--theme));
