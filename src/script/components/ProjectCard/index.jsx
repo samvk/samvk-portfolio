@@ -15,6 +15,7 @@ export default class ProjectCard extends React.Component {
     static propTypes = {
         audio: PropTypes.bool, // mark if link will have sound
         featured: PropTypes.bool,
+        github: PropTypes.string,
         href: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
         src: PropTypes.string.isRequired,
@@ -22,11 +23,12 @@ export default class ProjectCard extends React.Component {
 
     static defaultProps = {
         featured: false,
+        github: null,
     }
 
 
     render() {
-        const { audio, featured, name, href, src, ...props } = this.props;
+        const { audio, featured, github, name, href, src, ...props } = this.props;
         return (
             <div
                 styleName='container'
@@ -44,13 +46,13 @@ export default class ProjectCard extends React.Component {
                     {audio && <Logo styleName='audio' logo='volume-up' />}
                 </Link>
                 <Flex xCenter>
-                    <Logo
+                    {github && <Logo
                         styleName='logo'
                         logo='github-square'
-                        href='https://github.com/samvk'
+                        href={github}
                         title='GitHub'
                         text
-                    />
+                    />}
                 </Flex>
             </div>
         );
