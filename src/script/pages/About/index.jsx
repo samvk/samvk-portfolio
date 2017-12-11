@@ -39,11 +39,13 @@ export default class About extends React.Component {
                         <p>
                             You can <Link
                                 text
+                                externalIcon
                                 href='https://github.com/samvk'
                             >
                                 check me out on GitHub
                             </Link>, <Link
                                 text
+                                externalIcon
                                 href='https://linkedin.com/in/samvk'
                             >
                                 find me on LinkedIn

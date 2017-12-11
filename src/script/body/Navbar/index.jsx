@@ -57,8 +57,8 @@ export default class Header extends React.Component {
                             </li>
                             <li styleName='navlink'>
                                 <Link
+                                    externalIcon
                                     href='https://github.com/samvk'
-                                    className='external-link'
                                 >
                                     GitHub
                                 </Link>

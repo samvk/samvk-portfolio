@@ -37,7 +37,7 @@ p {
 ::selection { color: white color(var(--theme-light) alpha(67%)); }
 
 // link
-.external-link::after {
+.external-icon::after {
     font-awesome: external-link;
     font-size: 0.75em;
     vertical-align: text-top;
