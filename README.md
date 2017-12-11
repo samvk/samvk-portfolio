@@ -1,3 +1,3 @@
-My simple professional website.
+# Portfolio | SamVK
 
-Hosted on a raspberry pi at [jellyfish.software](https://jellyfish.software)
+I am a web developer based in Hartford, CT.
