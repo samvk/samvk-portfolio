@@ -7,3 +7,21 @@ $gutter: 15px;
         padding: * $gutter;
     }
 }
+
+.header {
+    position: relative;
+    margin-bottom: 2rem;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -0.25rem;
+        left: 50%;
+        transform: translate(-50%);
+        width: 3em;
+
+        border-left: 0.2em solid transparent;
+        border-right: 0.2em solid transparent;
+        border-top: 0.2em solid var(--theme);
+    }
+}

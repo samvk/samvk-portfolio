@@ -18,7 +18,7 @@ export default class Home extends React.Component {
                 <PortfolioCard
                     title='Projects'
                 >
-                    <h1>For the Web</h1>
+                    <h1 styleName='header'>For the Web</h1>
                     <Flex wrap styleName='grid'>
                         <ProjectCard
                             featured
@@ -57,7 +57,7 @@ export default class Home extends React.Component {
                             src='projects/samvk.png'
                         />
                     </Flex>
-                    <h1>Just for Fun</h1>
+                    <h1 styleName='header'>Just for Fun</h1>
                     <Flex wrap styleName='grid'>
                         <ProjectCard
                             audio
