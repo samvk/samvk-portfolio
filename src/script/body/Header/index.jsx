@@ -32,7 +32,7 @@ export default class Header extends React.Component {
                     <Link to='/' styleName='link'>
                         <div styleName='title'>
                             <span styleName='logo'>
-                                <Image src='logo.png' alt='SamVK' />
+                                <Image src='logo.png' alt='S' />
                             </span>
                             <span styleName='title-text-wrapper'>
                                 <h1 styleName='title-text'>amVK</h1>
