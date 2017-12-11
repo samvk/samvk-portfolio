@@ -45,6 +45,7 @@ export default class ProjectCard extends React.Component {
                 </Link>
                 <Flex xCenter>
                     <Logo
+                        styleName='logo'
                         logo='github-square'
                         href='https://github.com/samvk'
                         title='GitHub'
