@@ -28,10 +28,10 @@ export default class About extends React.Component {
                     <div>
                         <h1>Hi, I'm Sam.</h1>
                         <p>
-                            I'm a web developer who loves building apps and bringing designs to life. My go-to technologies right now include <strong>HTML5</strong>, <strong>CSS3</strong>, and <strong>JavaScript(ES8+)</strong>—amped with the help of <strong>React</strong> & <strong>Redux</strong> and <strong>Sass</strong> & <strong>PostCSS</strong>. Previously, I've also worked with jQuery, PHP, and MySQL.
+                            I'm a web developer who loves building apps and bringing designs to life. My go-to technologies right now include <strong>HTML5</strong>, <strong>CSS3</strong>, and <strong>JavaScript(ES8+)</strong> — amped with the help of <strong>React</strong> & <strong>Redux</strong> and <strong>Sass</strong> & <strong>PostCSS</strong>. Previously, I've also worked with jQuery, and some PHP and SQL.
                         </p>
                         <p>
-                            Currently, I work as a Software Engineer at <em>Konica Minolta Business Solutions</em>.
+                            I'm currently working as a Software Engineer at <em>Konica Minolta Business Solutions</em>.
                         </p>
                         <p>
                             On a personal note: I love metal detecting, watching movies, the theatre, and building things.
