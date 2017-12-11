@@ -39,7 +39,7 @@ export default class ProjectCard extends React.Component {
                     <Image
                         styleName={classNames('image', { featured })}
                         src={src}
-                        altTitle={name}
+                        alt={name}
                     />
                     {audio && <Logo styleName='audio' logo='volume-up' />}
                 </Link>
