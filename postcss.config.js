@@ -3,6 +3,8 @@ module.exports = {
     plugins: {
         'postcss-easy-import': {},
         'postcss-sassy-mixins': {},
+        'postcss-simple-vars': {},
+        'postcss-units': {},
         'postcss-cssnext': {
             browsers: [
                 'last 2 versions',
@@ -12,8 +14,6 @@ module.exports = {
                 'not last 2 operamini versions',
             ],
         },
-        'postcss-units': {},
-        'postcss-simple-vars': {},
         'postcss-for': {},
         'postcss-conditionals': {},
         'postcss-math': {},
