@@ -4,7 +4,13 @@ module.exports = {
         'postcss-easy-import': {},
         'postcss-sassy-mixins': {},
         'postcss-cssnext': {
-            browsers: ['last 2 versions', 'ie >= 11'],
+            browsers: [
+                'last 2 versions',
+                'not < 2%',
+                'not ie <= 10',
+                'not last 2 ucandroid versions',
+                'not last 2 operamini versions',
+            ],
         },
         'postcss-units': {},
         'postcss-simple-vars': {},
