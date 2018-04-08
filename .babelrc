@@ -6,7 +6,10 @@
                 "targets": {
                     "browsers": [
                         "last 2 versions",
-                        "ie >= 11"
+                        "not < 2%",
+                        "not ie <= 10",
+                        "not last 2 ucandroid versions",
+                        "not last 2 operamini versions"
                     ]
                 }
             }
