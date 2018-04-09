@@ -17,9 +17,10 @@
     --lighter: 100;
     --light: 300;
     --normal: 400;
-    --semi-bold: 500;
+    --semi-bold: 600;
     --bold: 700;
-    --bolder: 900;
+    --bolder: 800;
+    --boldest: 900;
 
     // Font size props (for static font sizes)
     --fs-3: em(22px);

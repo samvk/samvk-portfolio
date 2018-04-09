@@ -34,7 +34,7 @@
             text-transform: uppercase;
             font-size: em(32px);
             font-family: var(--ff-logo);
-            font-weight: var(--bold);
+            font-weight: var(--bolder);
             transform: translateX(-108%);
             filter: opacity(0%);
             transition: transform 500ms ease, filter 500ms ease;
