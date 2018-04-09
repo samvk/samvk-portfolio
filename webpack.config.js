@@ -9,7 +9,7 @@ const ModConcatPlugin = webpack.optimize.ModuleConcatenationPlugin;
 
 const API_PORT = ~~(process.env.API_PORT || 8080);
 const prod = process.env.NODE_ENV === 'production';
-const devTool = prod ? 'cheap-source-map' : 'cheap-module-eval-source-map';
+const devTool = prod ? false : 'eval-source-map';
 
 module.exports = {
     entry: './src/script.jsx',
