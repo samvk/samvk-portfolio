@@ -1,11 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Switch, Route, withRouter } from 'react-router-dom';
+import Loadable from 'react-loadable';
 
-import About from 'pages/About';
-import Projects from 'pages/Projects';
-import Contact from 'pages/Contact';
-import FourOhFour from 'pages/FourOhFour';
+const pageLoad = (loader) => (Loadable({
+    loader,
+    loading: () => (null),
+}));
+
+const About = pageLoad(() => (import('pages/About')));
+const Projects = pageLoad(() => (import('pages/Projects')));
+const Contact = pageLoad(() => (import('pages/Contact')));
+const FourOhFour = pageLoad(() => (import('pages/FourOhFour')));
 
 @withRouter
 export default class Page extends React.Component {
