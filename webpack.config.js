@@ -9,16 +9,14 @@ const ModConcatPlugin = webpack.optimize.ModuleConcatenationPlugin;
 
 const API_PORT = ~~(process.env.API_PORT || 8080);
 const prod = process.env.NODE_ENV === 'production';
-const rootPath = prod ? '/new' : '/';
-const distPath = prod ? '../www/new' : 'dist';
 const devTool = prod ? 'cheap-source-map' : 'cheap-module-eval-source-map';
 
 module.exports = {
     entry: './src/script.jsx',
     output: {
-        path: path.resolve(__dirname, distPath),
+        path: path.resolve(__dirname, 'dist'),
         filename: 'script-bundle.js',
-        publicPath: rootPath,
+        publicPath: '/',
     },
     devtool: devTool,
     resolve: {
