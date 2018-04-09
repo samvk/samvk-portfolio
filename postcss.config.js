@@ -8,8 +8,7 @@ module.exports = {
         'postcss-cssnext': {
             browsers: [
                 'last 2 versions',
-                'not < 2%',
-                'not ie <= 10',
+                '> 2%',
                 'not last 2 ucandroid versions',
                 'not last 2 operamini versions',
             ],
