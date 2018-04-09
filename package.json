@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "classnames": "^2.2.5",
+    "postcss-font-awesome": "^0.4.0",
     "postcss-math": "0.0.8",
     "prop-types": "https://registry.npmjs.org/prop-types/-/prop-types-15.5.9.tgz",
     "react": "^15.5.4",
@@ -51,7 +52,6 @@
     "postcss-cssnext": "^2.11.0",
     "postcss-discard-comments": "^2.0.4",
     "postcss-easy-import": "^2.0.0",
-    "postcss-font-awesome": "^0.3.4",
     "postcss-font-magician": "^2.0.0",
     "postcss-for": "^2.1.1",
     "postcss-loader": "^2.0.5",
