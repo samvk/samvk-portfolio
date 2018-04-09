@@ -4,9 +4,8 @@
   "description": "I am a web developer currently living in Hartford, CT.",
   "main": "script.jsx",
   "scripts": {
-    "build:prod": "env NODE_ENV=production webpack -p",
-    "watch": "webpack -p --watch",
-    "watch:dev": "webpack-dev-server --public --progress"
+    "build": "env NODE_ENV=production webpack -p",
+    "watch": "webpack-dev-server --public --progress"
   },
   "license": "MIT",
   "dependencies": {
