@@ -11,6 +11,15 @@ const API_PORT = ~~(process.env.API_PORT || 8080);
 const prod = process.env.NODE_ENV === 'production';
 const devTool = prod ? false : 'eval-source-map';
 
+const minifyRules = prod ? {
+    removeAttributeQuotes: true,
+    collapseWhitespace: true,
+    html5: true,
+    minifyCSS: true,
+    removeComments: true,
+    removeEmptyAttributes: true,
+} : false;
+
 module.exports = {
     entry: './src/script.jsx',
     output: {
@@ -125,6 +134,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: 'src/index.html',
+            minify: minifyRules,
         }),
         new FaviconsWebpackPlugin({
             logo: './src/img/favicon.png',
