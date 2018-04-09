@@ -36,6 +36,7 @@ export default class ProjectCard extends React.Component {
             >
                 <Link
                     className='relative'
+                    styleName='image-wrapper'
                     href={href}
                 >
                     <Image
