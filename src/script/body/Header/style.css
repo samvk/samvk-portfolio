@@ -21,7 +21,7 @@
             display: inline-flex;
             align-items: center;
             white-space: nowrap;
-            transform: translateX(calc(50% - 3rem));
+            transform: translateX(50%) translateX(-3rem);
             transition: transform 500ms ease;
         }
 
