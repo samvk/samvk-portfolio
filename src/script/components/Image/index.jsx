@@ -9,7 +9,7 @@ export default class Image extends React.Component {
         altTitle: PropTypes.string,
         block: PropTypes.bool,
         className: PropTypes.string,
-        src: PropTypes.string.isRequired,
+        src: PropTypes.string,
         url: PropTypes.string, // use if source is not local
     }
 
@@ -19,20 +19,25 @@ export default class Image extends React.Component {
         block: null,
         altTitle: null,
         className: null,
+        src: '',
         url: '',
     }
 
-    render() {
-        let { alt, title, altTitle, block, className, src, url, ...props } = this.props;
+    imageSrc = require.context(
+        '../../../img',
+        true,
+        /\.(ttf|otf|eot|svg|woff2?|png|gif|jpe?g|svg)$/,
+    );
 
-        src = `/src/img/${src}`;
+    render() {
+        const { alt, title, altTitle, block, className, src, url, ...props } = this.props;
 
         return (
             <img
                 alt={alt || altTitle}
                 className={classNames(className, { block })}
                 title={title || altTitle}
-                src={url || src}
+                src={url || this.imageSrc(`./${src}`)}
                 {...props}
             />
         );

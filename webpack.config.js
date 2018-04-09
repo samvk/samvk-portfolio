@@ -47,7 +47,6 @@ module.exports = {
                 test: /\.jsx?$/,
                 use: ['babel-loader'],
             },
-            // TODO: Use "extract-text-webpack-plugin" for production
             {
                 test: /^((?!\.global).)*s?css$/,
                 use: [
@@ -88,7 +87,7 @@ module.exports = {
                 use: [{
                     loader: 'url-loader',
                     options: {
-                        limit: 10000,
+                        limit: 30000,
                     },
                 }],
             },

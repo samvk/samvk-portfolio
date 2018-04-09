@@ -11,6 +11,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "classnames": "^2.2.5",
+    "file-loader": "^1.1.11",
     "postcss-font-awesome": "^0.4.0",
     "postcss-math": "0.0.8",
     "prop-types": "https://registry.npmjs.org/prop-types/-/prop-types-15.5.9.tgz",
