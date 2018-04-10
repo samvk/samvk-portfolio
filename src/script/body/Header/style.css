@@ -36,8 +36,8 @@
         font-family: var(--ff-logo);
         font-weight: var(--bolder);
         transform: translateX(-108%);
-        filter: opacity(0%);
-        transition: transform 500ms ease, filter 500ms ease;
+        opacity: 0;
+        transition: transform 500ms ease, opacity 500ms ease;
     }
 
     & .link:hover {
@@ -47,7 +47,7 @@
 
         .title-text {
             transform: none;
-            filter: opacity(100%);
+            opacity: 1;
         }
     }
 

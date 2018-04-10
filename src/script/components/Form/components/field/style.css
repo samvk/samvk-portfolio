@@ -18,13 +18,13 @@
     font-weight: var(--bold);
     position: absolute;
     top: 0;
-    filter: opacity(0%);
+    opacity: 0;
 
-    transition: filter 500ms, transform 500ms;
+    transition: opacity 500ms, transform 500ms;
 }
 
 .disabled {
-    filter: opacity(50%);
+    opacity: 0.5;
 }
 
 .field:focus + .title {
@@ -33,6 +33,6 @@
 
 // display title above when placeholder not shown
 .field:not(:placeholder-shown) + .title {
-    filter: opacity(100%);
+    opacity: 1;
     transform: translateY(-100%);
 }

@@ -108,7 +108,7 @@ $xl-min: 1200;
 // NOTE: This mixin requires a "fade-in" class added to trigger
 @mixin fade-in($position: inherit, $duration: 1000ms, $ease: ease) {
     // design
-    filter: opacity(0%);
+    opacity: 0;
     visibility: hidden;
     overflow: hidden;
 
@@ -116,11 +116,11 @@ $xl-min: 1200;
     position: absolute;
 
     // animation
-    transition: filter $duration $ease, visibility 0ms $duration;
+    transition: opacity $duration $ease, visibility 0ms $duration;
 
     &.fade-in {
         // design
-        filter: opacity(100%);
+        opacity: 1;
         visibility: visible;
 
         // layout
