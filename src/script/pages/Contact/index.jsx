@@ -14,8 +14,7 @@ import PortfolioCard from 'components/PortfolioCard';
 
 @pageTitle('Contact')
 @CSSModules(styles)
-export default class Home extends React.Component {
-
+export default class Contact extends React.Component {
     state = {
         form: {
             name: '',

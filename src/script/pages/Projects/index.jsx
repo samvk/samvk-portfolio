@@ -11,7 +11,7 @@ import ProjectCard from 'components/ProjectCard';
 
 @pageTitle('Projects')
 @CSSModules(styles, { allowMultiple: true })
-export default class Home extends React.Component {
+export default class Projects extends React.Component {
     render() {
         return (
             <article className='page xl'>
