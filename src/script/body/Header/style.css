@@ -1,56 +1,62 @@
 .header {
     font-size: 2rem;
-    padding: 0.5em 15px;
+    padding: 0.5rem 15px;
 
-    & {
-        .title-container {
-            overflow: hidden;
-        }
+    & .title-container {
+        overflow: hidden;
+    }
 
-        .link {
-            max-width: 550px;
-            overflow: hidden;
-        }
+    & .link {
+        max-width: 550px;
+        overflow: hidden;
+    }
 
-        .logo {
-            size: width(src/img/logo.png, 2) height(src/img/logo.png, 2);
-            transform: translateY(em(2.5px));
-        }
+    & .logo {
+        size: width(src/img/logo.png, 2) height(src/img/logo.png, 2);
+        transform: translateY(em(2.5px));
+    }
 
+    & .title {
+        display: inline-flex;
+        align-items: center;
+        white-space: nowrap;
+        transform: none;
+        transition: transform 500ms ease;
+    }
+
+    & .title-text-wrapper {
+        display: none;
+        overflow-x: hidden;
+        margin-left: em(-11px);
+    }
+
+    & .title-text {
+        text-transform: uppercase;
+        font-size: em(32px);
+        font-family: var(--ff-logo);
+        font-weight: var(--bolder);
+        transform: translateX(-108%);
+        filter: opacity(0%);
+        transition: transform 500ms ease, filter 500ms ease;
+    }
+
+    & .link:hover {
         .title {
-            display: inline-flex;
-            align-items: center;
-            white-space: nowrap;
-            transform: translateX(50%) translateX(-3rem);
-            transition: transform 500ms ease;
-        }
-
-        .title-text-wrapper {
-            overflow-x: hidden;
-            margin-left: em(-11px);
+            transform: none;
         }
 
         .title-text {
-            text-transform: uppercase;
-            font-size: em(32px);
-            font-family: var(--ff-logo);
-            font-weight: var(--bolder);
-            transform: translateX(-108%);
-            filter: opacity(0%);
-            transition: transform 500ms ease, filter 500ms ease;
+            transform: none;
+            filter: opacity(100%);
         }
+    }
 
-        @media (--sm-min) {
-            .link:hover {
-                .title {
-                    transform: none;
-                }
-
-                .title-text {
-                    transform: none;
-                    filter: opacity(100%);
-                }
-            }
+    @media (--sm-min) {
+        & .title {
+            transform: translateX(50%) translateX(-3rem);
+        }
+        & .title-text-wrapper {
+            display: block;
         }
     }
 }
