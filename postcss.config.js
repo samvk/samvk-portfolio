@@ -7,10 +7,9 @@ module.exports = {
         'postcss-units': {},
         'postcss-cssnext': {
             browsers: [
-                'last 2 versions',
-                '> 2%',
-                'not last 2 ucandroid versions',
-                'not last 2 operamini versions',
+                '> 1%',
+                'not ucandroid 1',
+                'not operamini 1',
             ],
         },
         'postcss-for': {},
