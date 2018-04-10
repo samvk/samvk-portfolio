@@ -1,6 +1,6 @@
 .header {
     font-size: 2rem;
-    padding: 0.5rem 15px;
+    padding: 0.5em 15px;
 
     & .title-container {
         overflow: hidden;
