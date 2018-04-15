@@ -88,6 +88,7 @@ module.exports = {
                     loader: 'url-loader',
                     options: {
                         limit: 30000,
+                        outputPath: 'img/',
                     },
                 }],
             },
@@ -138,7 +139,7 @@ module.exports = {
         new FaviconsWebpackPlugin({
             logo: './src/img/favicon.png',
             background: '#ffffff',
-            title: 'MarketPlace',
+            title: 'SamVK',
             emitStats: false,    // *supposed* to stop the favicons from printing to console (but seemingly not working)
         }),
         new HMRPlugin(),
