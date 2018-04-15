@@ -7,7 +7,7 @@ const { URL } = require('url');
 const HMRPlugin = webpack.HotModuleReplacementPlugin;
 const ModConcatPlugin = webpack.optimize.ModuleConcatenationPlugin;
 
-const API_PORT = ~~(process.env.API_PORT || 8080);
+const API_PORT = +(process.env.API_PORT || 8080);
 const prod = process.env.NODE_ENV === 'production';
 const devTool = prod ? false : 'eval-source-map';
 
