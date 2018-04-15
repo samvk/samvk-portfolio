@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 const { URL } = require('url');
 
@@ -142,6 +143,9 @@ module.exports = {
             title: 'SamVK',
             emitStats: false,    // *supposed* to stop the favicons from printing to console (but seemingly not working)
         }),
+        new CopyWebpackPlugin([
+            { from: 'src/docs/', to: 'docs/' },
+        ]),
         new HMRPlugin(),
         new ModConcatPlugin(),
     ],
