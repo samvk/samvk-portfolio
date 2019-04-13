@@ -60,6 +60,13 @@ export default class Projects extends React.Component {
                     <h1 styleName='header'>Just for Fun</h1>
                     <Flex wrap styleName='grid'>
                         <ProjectCard
+                            featured
+                            name='Google Assistant'
+                            href='https://assistant.google.com/explore/search?q=SamVK'
+                            github='https://github.com/samvk?tab=repositories&q=actions-on-google'
+                            src='projects/googleassistant.png'
+                        />
+                        <ProjectCard
                             name='Chrome Web Store'
                             href='https://chrome.google.com/webstore/search/SamVK?_category=extensions'
                             github='https://github.com/samvk?tab=repositories&q=chrome-extension'
