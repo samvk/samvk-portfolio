@@ -59,7 +59,7 @@ export default class Footer extends React.Component {
                             />
                         </Flex>
                     </Flex>
-                    <div styleName='copyright'>2018 &copy; SamVK</div>
+                    <div styleName='copyright'>2019 &copy; SamVK</div>
                 </div>
             </footer>
         );

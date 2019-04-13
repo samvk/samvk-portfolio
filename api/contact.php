@@ -97,7 +97,7 @@ $body = <<<HTML
             </div>
             <div class='line'></div>
             <p>{$message}</p>
-            <p class='copyright text-center'>2018 &copy; SamVK</p>
+            <p class='copyright text-center'>2019 &copy; SamVK</p>
         </div>
 	</body>
 </html>
