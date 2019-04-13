@@ -60,6 +60,12 @@ export default class Projects extends React.Component {
                     <h1 styleName='header'>Just for Fun</h1>
                     <Flex wrap styleName='grid'>
                         <ProjectCard
+                            name='Chrome Web Store'
+                            href='https://chrome.google.com/webstore/search/SamVK?_category=extensions'
+                            github='https://github.com/samvk?tab=repositories&q=chrome-extension'
+                            src='projects/chromewebstore.png'
+                        />
+                        <ProjectCard
                             audio
                             name='Team Fortress 2'
                             href='https://teamfortress2.samvk.com'
