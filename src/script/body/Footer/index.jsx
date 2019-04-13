@@ -49,7 +49,7 @@ export default class Footer extends React.Component {
                             </div>
                             <Logo
                                 logo='file-text-o'
-                                href='/docs/SamKauffman_Resume.pdf'
+                                href='/resume'
                                 title='Resume'
                             />
                             <Logo
