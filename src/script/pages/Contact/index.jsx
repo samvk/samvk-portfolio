@@ -1,6 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-import classNames from 'classnames';
 
 import pageTitle from 'react-document-title-decorator';
 
@@ -9,7 +8,6 @@ import styles from './style.css';
 
 import { Form, Input, Textarea } from 'components/Form';
 import Button from 'components/Button';
-import Link from 'components/Link';
 import PortfolioCard from 'components/PortfolioCard';
 
 @pageTitle('Contact')
@@ -55,11 +53,9 @@ export default class Contact extends React.Component {
 
                             const formData = this.state.form;
                             axios.post('/api/contact.php', formData).then(({ data }) => {
-                                console.log(this.state);
                                 this.setState(() => ({
                                     status: data,
                                 }));
-                                setTimeout(() => { console.log(this.state); }, 1000);
                             }).catch(({ response }) => {
                                 this.setState(() => ({ status: response.data }));
                             }).then(() => {
