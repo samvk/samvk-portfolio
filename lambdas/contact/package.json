@@ -9,5 +9,9 @@
   "license": "MIT",
   "dependencies": {
     "aws-sdk": "^2.441.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.24",
+    "@types/node": "^11.13.6"
   }
 }

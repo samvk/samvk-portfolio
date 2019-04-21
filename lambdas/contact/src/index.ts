@@ -1,4 +1,5 @@
-const AWS = require('aws-sdk');
+import * as AWS from 'aws-sdk';
+import { Handler } from 'aws-lambda';
 
 const responseHeaders = {
     'Access-Control-Allow-Origin': 'https://samvk.com',
@@ -6,19 +7,21 @@ const responseHeaders = {
     'Access-Control-Allow-Credentials': true,
 };
 
-const successResponse = (body) => ({
+const successResponse = (body: {}) => ({
     statusCode: 200,
     headers: responseHeaders,
     body: JSON.stringify(body),
 });
 
-const errorResponse = (err) => ({
+const errorResponse = (err: {}) => ({
     statusCode: 500,
     headers: responseHeaders,
     body: JSON.stringify(err),
 });
 
-const makeEmailParams = ({ name, email, message, phone = '' }) => {
+const makeEmailParams = (
+    { name, email, message, phone = '' }: { name: string, email: string, message: string, phone?: string }
+) => {
     if (!name || !email || !message) {
         throw new Error('Some required fields left blank.');
     }
@@ -29,7 +32,7 @@ const makeEmailParams = ({ name, email, message, phone = '' }) => {
 
     const bodyHtml = `<html>
     <head>
-        <title>SamVK - Message</title>
+        <title>SamVK – Message</title>
 
         <style>
             .body {
@@ -128,7 +131,7 @@ Message: ${message}`;
     };
 };
 
-exports.handler = async (event) => {
+export const handler: Handler = async (event) => {
     try {
         AWS.config.update({
             apiVersions: { ses: '2010-12-01' },
@@ -143,4 +146,4 @@ exports.handler = async (event) => {
     } catch (err) {
         return errorResponse({ message: 'Failed to send message.', errorMessage: err.message });
     }
-};
+}
