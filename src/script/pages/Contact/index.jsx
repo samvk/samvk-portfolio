@@ -1,6 +1,6 @@
 import React from 'react';
-import axios from 'axios';
 
+import client from 'client';
 import pageTitle from 'react-document-title-decorator';
 
 import CSSModules from 'react-css-modules';
@@ -21,10 +21,7 @@ export default class Contact extends React.Component {
             message: '',
         },
         pending: false,
-        status: {
-            success: null,
-            message: '',
-        },
+        status: { success: null },
     }
 
     handleInputChange = ({ target }) => {
@@ -38,6 +35,23 @@ export default class Contact extends React.Component {
         }));
     }
 
+    handleSubmit = () => {
+        this.setState({ pending: true });
+
+        const formData = this.state.form;
+        client.post('/contact', formData).then(() => {
+            this.setState({
+                status: { success: true },
+            });
+        }).catch(({ response }) => {
+            this.setState({
+                status: { success: false, message: response.data.message },
+            });
+        }).finally(() => {
+            this.setState({ pending: false });
+        });
+    }
+
     render() {
         // disabled form on submission or after success
         const isDisabled = this.state.pending || this.state.status.success;
@@ -48,20 +62,7 @@ export default class Contact extends React.Component {
                     title='Contact'
                 >
                     <Form
-                        onSubmit={() => {
-                            this.setState(() => ({ pending: true }));
-
-                            const formData = this.state.form;
-                            axios.post('/api/contact.php', formData).then(({ data }) => {
-                                this.setState(() => ({
-                                    status: data,
-                                }));
-                            }).catch(({ response }) => {
-                                this.setState(() => ({ status: response.data }));
-                            }).then(() => {
-                                this.setState(() => ({ pending: false }));
-                            });
-                        }}
+                        onSubmit={this.handleSubmit}
                     >
                         <Input
                             title='Name'
@@ -106,10 +107,10 @@ export default class Contact extends React.Component {
                                 pending={this.state.pending}
                                 disabled={isDisabled}
                             >
-                                {this.state.status.success ? this.state.status.message : 'Submit'}
+                                {this.state.status.success ? 'Sent!' : 'Submit'}
                             </Button>
                             <p styleName='error'>
-                                {!this.state.status.success ? this.state.status.message : ''}
+                                {this.state.status.success ? '' : this.state.status.message}
                             </p>
                         </div>
                     </Form>
