@@ -1,5 +1,6 @@
 import * as AWS from 'aws-sdk';
 import { Handler } from 'aws-lambda';
+import { escapeHtml } from './util';
 
 const responseHeaders = {
     'Access-Control-Allow-Origin': 'https://samvk.com',
@@ -87,12 +88,12 @@ const makeEmailParams = (
                 <img class='logo' alt='SamVK' src='https://samvk.com/img/logo.png' />
             </div>
             <div class='info'>
-                <p><span class='title'>Name</span> ${name}</p>
-                <p><span class='title'>Email</span> ${email}</p>
-                <p><span class='title'>Phone</span> ${phone}</p>
+                <p><span class='title'>Name</span> ${escapeHtml(name)}</p>
+                <p><span class='title'>Email</span> ${escapeHtml(email)}</p>
+                <p><span class='title'>Phone</span> ${escapeHtml(phone)}</p>
             </div>
             <div class='line'></div>
-            <p>${message}</p>
+            <p>${escapeHtml(message)}</p>
             <p class='copyright text-center'>2019 &copy; SamVK</p>
         </div>
     </body>
