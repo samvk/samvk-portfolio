@@ -22,6 +22,12 @@ export default class Projects extends React.Component {
                     <Flex wrap styleName='grid'>
                         <ProjectCard
                             featured
+                            name='Konica Minolta Personalize'
+                            href='https://konicaminoltapersonalize.com'
+                            src='projects/konicaminoltapersonalize.png'
+                        />
+                        <ProjectCard
+                            featured
                             name='Konica Minolta Marketplace'
                             href='https://us.konicaminoltamarketplace.com'
                             src='projects/konicaminoltamarketplace.png'
