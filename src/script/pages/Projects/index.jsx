@@ -67,6 +67,7 @@ export default class Projects extends React.Component {
                             src='projects/googleassistant.png'
                         />
                         <ProjectCard
+                            featured
                             name='Chrome Web Store'
                             href='https://chrome.google.com/webstore/search/SamVK?_category=extensions'
                             github='https://github.com/samvk?tab=repositories&q=chrome-extension'
