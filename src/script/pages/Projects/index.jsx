@@ -57,10 +57,16 @@ export default class Projects extends React.Component {
                             src='projects/daterussell.png'
                         />
                         <ProjectCard
+                            name='SamVK | My Portfolio'
+                            href='https://samvk.com'
+                            github='https://github.com/samvk/samvk-portfolio'
+                            src='projects/samvk.png'
+                        />
+                        <ProjectCard
                             name='SamVK | My Portfolio (original)'
                             href='https://original.samvk.com'
                             github='https://github.com/samvk/samvk-portfolio-original'
-                            src='projects/samvk.png'
+                            src='projects/samvkoriginal.png'
                         />
                     </Flex>
                     <h1 styleName='header'>Just for Fun</h1>
