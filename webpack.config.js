@@ -30,7 +30,7 @@ module.exports = {
     },
     devtool: devTool,
     resolve: {
-        extensions: ['*', '.js', '.jsx', '.json'],
+        extensions: ['*', '.ts', '.js', '.jsx', '.json'],
         modules: [
             // paths to resolve imports
             path.resolve('./src/script/modules'),
