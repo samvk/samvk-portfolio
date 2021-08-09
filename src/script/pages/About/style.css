@@ -1,11 +1,11 @@
 .headshot {
     border: rem(5px) solid var(--gray-lightest);
-    width: width(src/img/headshot.png, 2);
+    width: width(src/img/headshot.png);
     border-radius: 50%;
     margin-top: 1rem;
 
     @media (--sm-min) {
-        height: height(src/img/headshot.png, 2);
+        height: height(src/img/headshot.png);
     }
 }
 
