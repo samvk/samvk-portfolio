@@ -22,6 +22,12 @@ export default class Projects extends React.Component {
                     <Flex wrap styleName='grid'>
                         <ProjectCard
                             featured
+                            name='Shield Guard'
+                            href='https://getshieldguard.com'
+                            src='projects/shieldguard.png'
+                        />
+                        <ProjectCard
+                            featured
                             name='Konica Minolta Personalize'
                             href='https://getpersonalize.com'
                             src='projects/konicaminoltapersonalize.png'
