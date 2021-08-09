@@ -28,10 +28,7 @@ export default class About extends React.Component {
                     <div>
                         <h1>Hi, I'm Sam.</h1>
                         <p>
-                            I'm a software developer who enjoys problem solving, building apps, and bringing designs to life. My go-to technologies right now include <strong>HTML5</strong>, <strong>CSS3</strong>, and <strong>JavaScript</strong>(ESNext) — amped with the help of <strong>React</strong> & <strong>Redux</strong> and <strong>PostCSS</strong> & <strong>Sass</strong> — built with the help of <strong>Webpack</strong> and <strong>Babel</strong>. I also have experience with <strong>Node.js</strong>, <strong>PHP</strong>, and <strong>SQL</strong>.
-                        </p>
-                        <p>
-                            I'm currently working as a Software Engineer at <em>Konica Minolta Business Solutions</em>.
+                            I'm a software developer team lead at <em>Konica Minolta</em> who enjoys problem solving and bringing ideas to life. My go-to technologies include <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>JavaScript</strong>(ESNext), and <strong>TypeScript</strong> — amped with the help of <strong>React</strong> & <strong>Redux</strong> and <strong>PostCSS</strong> & <strong>Sass</strong> — built with the help of <strong>Webpack</strong> and <strong>Babel</strong>. I also work with <strong>Node.js</strong>, <strong>PHP</strong>, and <strong>SQL</strong>.
                         </p>
                         <p>
                             On a personal note: I love metal detecting, watching movies, the theatre, and building things.
