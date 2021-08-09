@@ -23,7 +23,7 @@ export default class Projects extends React.Component {
                         <ProjectCard
                             featured
                             name='Konica Minolta Personalize'
-                            href='https://konicaminoltapersonalize.com'
+                            href='https://getpersonalize.com'
                             src='projects/konicaminoltapersonalize.png'
                         />
                         <ProjectCard
