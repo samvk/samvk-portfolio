@@ -59,7 +59,7 @@ export default class Footer extends React.Component {
                             />
                         </Flex>
                     </Flex>
-                    <div styleName='copyright'>2020 &copy; SamVK</div>
+                    <div styleName='copyright'>{new Date().getFullYear()} &copy; SamVK</div>
                 </div>
             </footer>
         );
