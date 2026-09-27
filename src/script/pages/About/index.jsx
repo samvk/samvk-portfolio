@@ -28,7 +28,13 @@ export default class About extends React.Component {
                     <div>
                         <h1>Hi, I'm Sam.</h1>
                         <p>
-                            I'm a software developer team lead at <em>Konica Minolta</em> who enjoys problem solving and bringing ideas to life. My go-to technologies include <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>JavaScript</strong>(ESNext), and <strong>TypeScript</strong> — amped with the help of <strong>React</strong> & <strong>Redux</strong> and <strong>PostCSS</strong> & <strong>Sass</strong> — built with the help of <strong>Webpack</strong> and <strong>Babel</strong>. I also work with <strong>Node.js</strong>, <strong>PHP</strong>, and <strong>SQL</strong>.
+                            I'm a lead full-stack developer at <em>Konica Minolta</em> who enjoys problem solving and bringing ideas to life.
+                        </p>
+                        <p>
+                            For the past decade I've built multi-tenant SaaS end to end — data model, APIs, and the frontend architecture the rest of the department builds on. I'm the primary architect and developer of every commercial app our department has shipped, including our flagship enterprise workflow platform, <em>Dispatcher Stratus</em>, and I lead a team of 8 developers. I'm strongest where technical design meets user experience.
+                        </p>
+                        <p>
+                            My core stack is <strong>TypeScript</strong>, <strong>React</strong>, <strong>Node.js</strong>, and <strong>DynamoDB</strong>.
                         </p>
                         <p>
                             On a personal note: I love metal detecting, watching movies, the theatre, and building things.
