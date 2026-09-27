@@ -21,6 +21,11 @@ export default class Projects extends React.Component {
                     <h1 styleName='header'>For the Web</h1>
                     <Flex wrap styleName='grid'>
                         <ProjectCard
+                            name='Dispatcher Stratus'
+                            href='https://dispatcherstratus.com'
+                            src='projects/dispatcherstratus.png'
+                        />
+                        <ProjectCard
                             name='Shield Guard'
                             href='https://getshieldguard.com'
                             src='projects/shieldguard.png'
@@ -52,12 +57,6 @@ export default class Projects extends React.Component {
                             href='https://readeveryday.samvk.com'
                             github='https://github.com/samvk/readeveryday'
                             src='projects/readeveryday.png'
-                        />
-                        <ProjectCard
-                            name='Date Russell'
-                            href='https://daterussell.samvk.com'
-                            github='https://github.com/samvk/daterussell'
-                            src='projects/daterussell.png'
                         />
                         <ProjectCard
                             name='SamVK | My Portfolio'
@@ -104,6 +103,12 @@ export default class Projects extends React.Component {
                             href='https://cttreasurehunter.samvk.com/metaldetecting'
                             github='https://github.com/samvk/metaldetecting'
                             src='projects/metaldetecting.png'
+                        />
+                        <ProjectCard
+                            name='Date Russell'
+                            href='https://daterussell.samvk.com'
+                            github='https://github.com/samvk/daterussell'
+                            src='projects/daterussell.png'
                         />
                     </Flex>
                 </PortfolioCard>
