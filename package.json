@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "I am a web developer currently living in West Hartford, CT.",
+  "description": "Personal portfolio site",
   "main": "script.jsx",
   "scripts": {
     "build": "env NODE_ENV=production webpack -p",
