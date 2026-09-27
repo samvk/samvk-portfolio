@@ -21,19 +21,16 @@ export default class Projects extends React.Component {
                     <h1 styleName='header'>For the Web</h1>
                     <Flex wrap styleName='grid'>
                         <ProjectCard
-                            featured
                             name='Shield Guard'
                             href='https://getshieldguard.com'
                             src='projects/shieldguard.png'
                         />
                         <ProjectCard
-                            featured
                             name='Konica Minolta Personalize'
                             href='https://getpersonalize.com'
                             src='projects/konicaminoltapersonalize.png'
                         />
                         <ProjectCard
-                            featured
                             name='Konica Minolta Marketplace'
                             href='https://us.konicaminoltamarketplace.com'
                             src='projects/konicaminoltamarketplace.png'
@@ -78,14 +75,12 @@ export default class Projects extends React.Component {
                     <h1 styleName='header'>Just for Fun</h1>
                     <Flex wrap styleName='grid'>
                         <ProjectCard
-                            featured
                             name='Google Assistant'
                             href='https://assistant.google.com/explore/search?q=SamVK'
                             github='https://github.com/samvk?tab=repositories&q=actions-on-google'
                             src='projects/googleassistant.png'
                         />
                         <ProjectCard
-                            featured
                             name='Chrome Web Store'
                             href='https://chrome.google.com/webstore/search/SamVK?_category=extensions'
                             github='https://github.com/samvk?tab=repositories&q=chrome-extension'
