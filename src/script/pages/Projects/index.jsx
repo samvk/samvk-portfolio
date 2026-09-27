@@ -40,25 +40,25 @@ export default class Projects extends React.Component {
                         />
                         <ProjectCard
                             name='Greetings, World!'
-                            href='https://greetingsworld.us'
+                            href='https://greetingsworld.samvk.com'
                             github='https://github.com/samvk/postcard-creator'
                             src='projects/greetingsworld.png'
                         />
                         <ProjectCard
                             name='The Treasure Hunter'
-                            href='https://cttreasurehunter.com'
+                            href='https://cttreasurehunter.samvk.com'
                             github='https://github.com/samvk/cttreasurehunter'
                             src='projects/cttreasurehunter.png'
                         />
                         <ProjectCard
                             name='Read Every Day!'
-                            href='https://readeverydayclub.com'
+                            href='https://readeveryday.samvk.com'
                             github='https://github.com/samvk/readeveryday'
                             src='projects/readeveryday.png'
                         />
                         <ProjectCard
                             name='Date Russell'
-                            href='https://daterussell.com'
+                            href='https://daterussell.samvk.com'
                             github='https://github.com/samvk/daterussell'
                             src='projects/daterussell.png'
                         />
@@ -106,7 +106,7 @@ export default class Projects extends React.Component {
                         />
                         <ProjectCard
                             name='Metal Detecting'
-                            href='https://cttreasurehunter.com/metaldetecting'
+                            href='https://cttreasurehunter.samvk.com/metaldetecting'
                             github='https://github.com/samvk/metaldetecting'
                             src='projects/metaldetecting.png'
                         />
